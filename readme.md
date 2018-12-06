@@ -4,7 +4,7 @@ Chat Commands:
 
 Code: Select all
 Buff Commands: war, void, missile, heavy, light, finesse, two, trade, tink, xp, buffs, strength, lore, prots, baneshield, brill, weapon, wand.
-Bot Commands: primary, secondary, mm, stats, whereto, loc, cancel, reset
+Bot Commands: primary, secondary, mm, tn, stats, whereto, loc, cancel, reset
 --reset command is disabled by default in the *** Edit Here *** state.
 
 
@@ -19,16 +19,19 @@ Listed from top to bottom of *** Edit Here *** state:
 7. Min Stamina, and Min Mana. The minimum of each vital before the bot attempts to regain said vital.
 8. Primary/Secondary tie names.
 9. Location name.
-10. Brilliance Bot. Set to never on the left side to disable casting brilliance.
-11. Refill Focusing Stone. Set to never if you don't wish to refill the focusing stone upon each brill.
-12. Refill Charge. Name of the Mana Charge you wish to use to refill the Focusing Stone.
-13. Master Mage Gem Name. Set to the name of the gem you wish to open. (Stock setting is Celdiseth's Portal Gem)
-14. Master Mage Gem usage. Set to always or never to enable/disable.
-15. Self Eights. Buffs self with 8's if set to always.
-16. Bane Eights. Casts level 8 banes on shields if set to always.
-17. Item Eights. Use level 8 item spells to buff players if set to always. (Not currently functional on Reefcull)
-18. Allow Reset. Allows the use of the reset command. This is disabled by default because it is abusable.
-19. Set State Main Loop, don't touch this line.
+10. Silent Mode. Set to never or always to toggle silent mode (no spam)
+11. Brilliance Bot. Set to never on the left side to disable casting brilliance.
+12. Refill Focusing Stone. Set to never if you don't wish to refill the focusing stone upon each brill.
+13. Refill Charge. Name of the Mana Charge you wish to use to refill the Focusing Stone.
+14. Portal Bot. Set to never or always to enable/disable the portal bot feature.
+15. Master Mage Gem usage. Set to always or never to enable/disable.
+16. Master Mage Gem Name. Set to the name of the gem you wish to open. (Stock setting is Celdiseth's Portal Gem)
+17. Town Network gem usage, set to never or always to enable/disable it.
+18. Self Eights. Buffs self with 8's if set to always.
+19. Bane Eights. Casts level 8 banes on shields if set to always.
+20. Item Eights. Use level 8 item spells to buff players if set to always. (Not currently functional on Reefcull)
+21. Allow Reset. Allows the use of the reset command. This is disabled by default because it is abusable.
+22. Set State Main Loop, don't touch this line.
 
 Requirements:
 Vtank
@@ -41,3 +44,4 @@ Notes:
 4. only gives thanks for gifts from the main loop. (while awaiting a command)
 5. will cast brill, and/or summon portals in the middle of buffing someone else and then return to buffing to save time.
 6. queue's up to 1 player being buffed, and 5 in line.
+7. only supports buffing with level 7 spells, will fail upon unknown spells.

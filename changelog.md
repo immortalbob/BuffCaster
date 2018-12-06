@@ -1,3 +1,10 @@
+Version 1.2:
+-will now choose either Nuhmudira's Enlightenment, or Arcanum Enlightenment VII depending on which you have in your spell book
+-you can now enable/disable the portal bot by setting the appropriate variable to always/never in the *** Edit Here *** state
+-silent mode (no spam) can now be enabled/disabled in the *** Edit Here *** state
+-can now make use of Town Network Portal Gems, enable/disable in the *** Edit Here *** state
+-speaks in open chat when summoning a portal now
+
 Version 1.1:
 -now @tells portal requester the name of the location requested (Egg Orchard, Town Network, etc) along with the trigger word (primary/secondary).
 -now disables the brilliance bot if there is no focusing stone in your inventory, regardless of brillbot setting.

@@ -17,7 +17,7 @@ i
 i
 0
 s
-    %%% BuffCaster Version 1.2 %%%
+    %%% BuffCaster Version 1.2.1 %%%
 i
 0
 s
@@ -15069,7 +15069,7 @@ Cast-Portal
 i
 28
 i
-5
+8
 TABLE
 2
 k
@@ -15091,15 +15091,11 @@ k
 v
 n
 n
-2
+1
 s
-st
+e
 s
-Chat-Pre-Handler
-s
-ret
-s
-Cast-Portal
+\/t +getvar[capturegroup_name]+\, Please make your request again once I have completed summoning this portal\.
 s
 Cast-Portal
 i

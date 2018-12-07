@@ -1,3 +1,6 @@
+Version 1.2.1
+-fixed bug that caused the macro to lock up when receiving a command while summoning a portal. This functionality was removed, and replaced with a chat response.
+
 Version 1.2:
 -will now choose either Nuhmudira's Enlightenment, or Arcanum Enlightenment VII depending on which you have in your spell book
 -you can now enable/disable the portal bot by setting the appropriate variable to always/never in the *** Edit Here *** state

@@ -10,28 +10,43 @@ Bot Commands: primary, secondary, mm, tn, stats, whereto, loc, cancel, reset
 
 Options:
 Listed from top to bottom of *** Edit Here *** state:
-1. Primary and secondary headings for summoning portals. 0 = North, 90 = East, 180 = South, 270 = West and everything in between
+1. Silent Mode. Set to never or always to toggle silent mode (no spam)
 2. Seconds Till Next Spam. The amount of seconds between spamming local chat. 1800 is 30 minutes, 300 per 5 minutes.
 3. Seconds Till Next Buff. The amount of seconds until the bot wants to buff itself. 3300 is 55 minutes. 300 per 5 minutes.
-4. Seconds Till Next Beg. The amount of seconds until it begs for comps in local chat when below spell component thresholds (<250 tapers, <5 platinum scarabs, or <5 mana scarabs.)
-5. Face Heading. Set to the heading you wish your bot to face normally. 0 = North, 90 = East, 180 = South, 270 = West and everything in between
-6. Max Distance. the maximum distance a player can be from you and still receive buffs. (in meters)
-7. Min Stamina, and Min Mana. The minimum of each vital before the bot attempts to regain said vital.
-8. Primary/Secondary tie names.
-9. Location name.
-10. Silent Mode. Set to never or always to toggle silent mode (no spam)
-11. Brilliance Bot. Set to never on the left side to disable casting brilliance.
-12. Refill Focusing Stone. Set to never if you don't wish to refill the focusing stone upon each brill.
-13. Refill Charge. Name of the Mana Charge you wish to use to refill the Focusing Stone.
-14. Portal Bot. Set to never or always to enable/disable the portal bot feature.
-15. Master Mage Gem usage. Set to always or never to enable/disable.
-16. Master Mage Gem Name. Set to the name of the gem you wish to open. (Stock setting is Celdiseth's Portal Gem)
-17. Town Network gem usage, set to never or always to enable/disable it.
-18. Self Eights. Buffs self with 8's if set to always.
-19. Bane Eights. Casts level 8 banes on shields if set to always.
-20. Item Eights. Use level 8 item spells to buff players if set to always. (Not currently functional on Reefcull)
-21. Allow Reset. Allows the use of the reset command. This is disabled by default because it is abusable.
-22. Set State Main Loop, don't touch this line.
+4. No Begging, set to always to disable begging when components are low.
+5. Seconds Till Next Beg. The amount of seconds until it begs for comps in local chat when below spell component thresholds (<250 tapers, <5 platinum scarabs, or <5 mana scarabs.)
+6. Location name.
+7. Face Heading. Set to the heading you wish your bot to face normally. 0 = North, 90 = East, 180 = South, 270 = West and everything in between
+8. Max Distance. the maximum distance a player can be from you and still receive buffs. (in meters)
+9. Min Stamina, and Min Mana. The minimum of each vital before the bot attempts to regain said vital.
+10. PortalBot, Set to always to enable the portal bot, never to disable it.
+11. Primary/Secondary tie names.
+12. Primary and secondary headings for summoning portals. 0 = North, 90 = East, 180 = South, 270 = West and everything in between
+13. Brilliance Bot. Set to never on the left side to disable casting brilliance.
+14. Refill Focusing Stone. Set to never if you don't wish to refill the focusing stone upon each brill.
+15. Refill Charge. Name of the Mana Charge you wish to use to refill the Focusing Stone.
+16. Master Mage Gem usage. Set to always or never to enable/disable.
+17. Master Mage Gem Name. Set to the name of the gem you wish to open. (Stock setting is Celdiseth's Portal Gem)
+18. Town Network gem usage, set to never or always to enable/disable it.
+19. PreBuff, set to always to enable prebuffing (foc/self/creature of 1 lesser level before main self buff routine)
+20. Self Sixes. Buffs self with 6's if set to always.
+21. Self Sevens. Buffs self with 7's if set to always.
+22. Self Eights. Buffs self with 8's if set to always.
+23. Other Sixes. Buffs others with 6's if set to always.
+24. Other Sevens. Buffs others with 7's if set to always.
+25. Bane Sixes. Uses sixes when baning a shield if set to always.
+26. Bane Sevens. Uses sevens when baning a shield if set to always.
+27. Bane Eights. Uses eights when baning a shield if set to always.
+28. Item Sixes. Uses sixes when buffing weapon auras if set to always.
+29. Item Sevens. Uses sevens when buffing weapon auras if set to always.
+30. Item Eights. Uses eights when buffing weapon auras if set to always.
+31. Regain Vitals Sixes. Uses level six spells to regain stamina and mana when set to always.
+32. Regain Vitals Sevens. Uses level seven spells to regain stamina and mana when set to always.
+33. Regain Vitals Eights. Uses level eight spells to regain stamina and mana when set to always.
+34. Allow Reset. Allows the use of the reset command. This is disabled by default because it is abusable.
+35. Set State Main Loop, don't touch this line.
+
+
 
 Requirements:
 Vtank
@@ -44,4 +59,4 @@ Notes:
 4. only gives thanks for gifts from the main loop. (while awaiting a command)
 5. will cast brill, and/or summon portals in the middle of buffing someone else and then return to buffing to save time.
 6. queue's up to 1 player being buffed, and 5 in line.
-7. only supports buffing with level 7 spells, will fail upon unknown spells.
+7. only supports buffing with level 6, 7, and 8 spells, will fail upon unknown spells.

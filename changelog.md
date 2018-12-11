@@ -1,3 +1,16 @@
+Version 1.3
+-Buffing system overhaul part 1, "variable-ized" the buff ID's to allow for expanding to lesser level buff sets.
+-Can now cast 6's, 7's, and 8's.
+-Regaining vitals can now be set to 6's 7's or 8's (there is no stamina to mana 8)
+-The Buff-Self state has been cleaned up substantially, and has been made more efficient.
+-Now will attempt to regain stamina/mana when necessary while self buffing.
+-New PreBuff option added, it will cast the next level lower foc/self/creature spells before doing its main buff routine.
+-Will now check for Pyreal Scarabs for level 6 self buffs, as well as Gold Scarabs if PreBuff is enabled.
+-No Begging mode added, when turned on, it will not beg for comps when low.
+-When begging for comps, it now begs for the specific component it is running low on.
+-Will only beg for components it is set to use, for instance if you are using sixes to buff, it wont beg for plats.
+-Now supports both possible Missile Weapon Mastery Other VII spells. (old arwic professors vs new)
+
 Version 1.2.1
 -fixed bug that caused the macro to lock up when receiving a command while summoning a portal. This functionality was removed, and replaced with a chat response.
 

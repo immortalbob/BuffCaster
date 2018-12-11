@@ -11,34 +11,35 @@ n
 n
 n
 n
-358
+380
 i
 4
 i
 0
 s
-    %%% BuffCaster Version 1.2.1 %%%
+    %%% BuffCaster Version 1.3.0 %%%
 i
 0
 s
 *** Edit Here ***
 i
-1
+4
 i
-3
+0
+s
+           %% OPTIONS %%
+i
+0
+s
+*** Edit Here ***
+i
+0
+i
+7
 i
 0
 TABLE
 2
-K
-V
-n
-n
-2
-i
-7
-TABLE
-2
 k
 v
 n
@@ -47,20 +48,7 @@ n
 s
 e
 s
-setvar[PriHeading, 315]
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-setvar[SecHeading, 45]
+setvar[SilentMode, true]
 s
 *** Edit Here ***
 i
@@ -102,6 +90,25 @@ setvar[SecondsTillNextSelfBuff, 3300]
 s
 *** Edit Here ***
 i
+0
+i
+7
+i
+0
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[NoBegging, true]
+s
+*** Edit Here ***
+i
 1
 i
 7
@@ -118,6 +125,25 @@ s
 e
 s
 setvar[SecondsTillNextBeg, 180]
+s
+*** Edit Here ***
+i
+1
+i
+7
+i
+0
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Location, Marketplace]
 s
 *** Edit Here ***
 i
@@ -202,6 +228,25 @@ s
 i
 1
 i
+7
+i
+0
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[PortalBot, true]
+s
+*** Edit Here ***
+i
+1
+i
 3
 i
 0
@@ -243,9 +288,18 @@ s
 i
 1
 i
-7
+3
 i
 0
+TABLE
+2
+K
+V
+n
+n
+2
+i
+7
 TABLE
 2
 k
@@ -256,15 +310,9 @@ n
 s
 e
 s
-setvar[Location, Marketplace]
-s
-*** Edit Here ***
-i
-0
+setvar[PriHeading, 315]
 i
 7
-i
-0
 TABLE
 2
 k
@@ -275,7 +323,7 @@ n
 s
 e
 s
-setvar[SilentMode, true]
+setvar[SecHeading, 45]
 s
 *** Edit Here ***
 i
@@ -351,25 +399,6 @@ n
 s
 e
 s
-setvar[PortalBot, true]
-s
-*** Edit Here ***
-i
-1
-i
-7
-i
-0
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
 setvar[UseMasterMageGems, true]
 s
 *** Edit Here ***
@@ -412,6 +441,63 @@ setvar[UseTownNetworkGems, true]
 s
 *** Edit Here ***
 i
+1
+i
+7
+i
+0
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[PreBuff, true]
+s
+*** Edit Here ***
+i
+0
+i
+7
+i
+0
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[SelfSixes, true]
+s
+*** Edit Here ***
+i
+1
+i
+7
+i
+0
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[SelfSevens, true]
+s
+*** Edit Here ***
+i
 0
 i
 7
@@ -428,6 +514,82 @@ s
 e
 s
 setvar[SelfEights, true]
+s
+*** Edit Here ***
+i
+0
+i
+7
+i
+0
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[OtherSixes, true]
+s
+*** Edit Here ***
+i
+1
+i
+7
+i
+0
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[OtherSevens, true]
+s
+*** Edit Here ***
+i
+0
+i
+7
+i
+0
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[BaneSixes, true]
+s
+*** Edit Here ***
+i
+1
+i
+7
+i
+0
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[BaneSevens, true]
 s
 *** Edit Here ***
 i
@@ -465,7 +627,102 @@ n
 s
 e
 s
+setvar[ItemSixes, true]
+s
+*** Edit Here ***
+i
+1
+i
+7
+i
+0
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[ItemSevens, true]
+s
+*** Edit Here ***
+i
+0
+i
+7
+i
+0
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
 setvar[ItemEights, true]
+s
+*** Edit Here ***
+i
+0
+i
+7
+i
+0
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[RegainVitalsSixes, true]
+s
+*** Edit Here ***
+i
+1
+i
+7
+i
+0
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[RegainVitalsSevens, true]
+s
+*** Edit Here ***
+i
+0
+i
+7
+i
+0
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[RegainVitalsEights, true]
 s
 *** Edit Here ***
 i
@@ -873,7 +1130,7 @@ setvar[buff, 9]
 i
 1
 s
-Buff-Self
+Buff-Self-Spell-Handler
 s
 *** Main Loop ***
 i
@@ -999,7 +1256,7 @@ K
 V
 n
 n
-2
+3
 i
 26
 TABLE
@@ -1012,16 +1269,7 @@ n
 s
 e
 s
-getvar[lowcomps]==0
-i
-3
-TABLE
-2
-K
-V
-n
-n
-3
+isfalse[getvar[lowcomps]]
 i
 11
 TABLE
@@ -1040,41 +1288,6 @@ c
 i
 250
 i
-11
-TABLE
-2
-k
-v
-n
-n
-2
-s
-n
-s
-Platinum Scarab
-s
-c
-i
-5
-i
-2
-TABLE
-2
-K
-V
-n
-n
-2
-i
-3
-TABLE
-2
-K
-V
-n
-n
-3
-i
 26
 TABLE
 2
@@ -1086,50 +1299,7 @@ n
 s
 e
 s
-getvar[itemeights]==true
-i
-26
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-getvar[selfeights]==true
-i
-26
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-getvar[baneeights]==true
-i
-11
-TABLE
-2
-k
-v
-n
-n
-2
-s
-n
-s
-Mana Scarab
-s
-c
-i
-5
+isfalse[getvar[NoBegging]]
 TABLE
 2
 K
@@ -1153,7 +1323,614 @@ setvar[lowcomps, 1]
 i
 2
 s
-/s I am running dangerously low on spell components. Please donate your plat/mana scarabs, and prismatic tapers here so I may continue buffing. Thank you.
+/s I am running dangerously low on Prismatic Tapers, please consider donating some so I may continue buffing.
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[comptimer, stopwatchcreate[]]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+stopwatchstart[getvar[comptimer]]
+s
+*** Main Loop ***
+i
+2
+i
+3
+TABLE
+2
+K
+V
+n
+n
+4
+i
+26
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+isfalse[getvar[lowcomps]]
+i
+11
+TABLE
+2
+k
+v
+n
+n
+2
+s
+n
+s
+Silver Scarab
+s
+c
+i
+5
+i
+26
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+istrue[getvar[PortalBot]]
+i
+26
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+isfalse[getvar[NoBegging]]
+TABLE
+2
+K
+V
+n
+n
+4
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[lowcomps, 1]
+i
+2
+s
+/s I am running dangerously low on Silver Scarabs, please consider donating some so I may continue summoning portals.
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[comptimer, stopwatchcreate[]]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+stopwatchstart[getvar[comptimer]]
+s
+*** Main Loop ***
+i
+2
+i
+3
+TABLE
+2
+K
+V
+n
+n
+4
+i
+26
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+isfalse[getvar[lowcomps]]
+i
+11
+TABLE
+2
+k
+v
+n
+n
+2
+s
+n
+s
+Pyreal Scarab
+s
+c
+i
+5
+i
+3
+TABLE
+2
+K
+V
+n
+n
+4
+i
+26
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+istrue[getvar[SelfSixes]]
+i
+26
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+istrue[getvar[OtherSixes]]
+i
+26
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+istrue[getvar[BaneSixes]]
+i
+26
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+istrue[getvar[ItemSixes]]
+i
+26
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+isfalse[getvar[NoBegging]]
+TABLE
+2
+K
+V
+n
+n
+4
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[lowcomps, 1]
+i
+2
+s
+/s I am running dangerously low on Pyreal Scarabs, please consider donating some so I may continue buffing.
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[comptimer, stopwatchcreate[]]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+stopwatchstart[getvar[comptimer]]
+s
+*** Main Loop ***
+i
+2
+i
+3
+TABLE
+2
+K
+V
+n
+n
+4
+i
+26
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+isfalse[getvar[lowcomps]]
+i
+11
+TABLE
+2
+k
+v
+n
+n
+2
+s
+n
+s
+Platinum Scarab
+s
+c
+i
+5
+i
+3
+TABLE
+2
+K
+V
+n
+n
+4
+i
+26
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+istrue[getvar[SelfSevens]]
+i
+26
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+istrue[getvar[OtherSevens]]
+i
+26
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+istrue[getvar[BaneSevens]]
+i
+26
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+istrue[getvar[ItemSevens]]
+i
+26
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+isfalse[getvar[NoBegging]]
+TABLE
+2
+K
+V
+n
+n
+4
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[lowcomps, 1]
+i
+2
+s
+/s I am running dangerously low on Platinum Scarabs, please consider donating some so I may continue buffing.
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[comptimer, stopwatchcreate[]]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+stopwatchstart[getvar[comptimer]]
+s
+*** Main Loop ***
+i
+2
+i
+3
+TABLE
+2
+K
+V
+n
+n
+4
+i
+26
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+isfalse[getvar[lowcomps]]
+i
+11
+TABLE
+2
+k
+v
+n
+n
+2
+s
+n
+s
+Mana Scarab
+s
+c
+i
+5
+i
+3
+TABLE
+2
+K
+V
+n
+n
+3
+i
+26
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+istrue[getvar[SelfEights]]
+i
+26
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+istrue[getvar[BaneEights]]
+i
+26
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+istrue[getvar[ItemEights]]
+i
+26
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+isfalse[getvar[NoBegging]]
+TABLE
+2
+K
+V
+n
+n
+4
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[lowcomps, 1]
+i
+2
+s
+/s I am running dangerously low on Mana Scarabs, please consider donating some so I may continue buffing.
 i
 7
 TABLE
@@ -1205,7 +1982,7 @@ n
 s
 e
 s
-getvar[lowcomps]==1
+istrue[getvar[lowcomps]]
 i
 26
 TABLE
@@ -1821,7 +2598,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2086, getvar[target]]
+actiontrycastbyidontarget[getvar[Strength], getvar[target]]
 i
 7
 TABLE
@@ -1834,7 +2611,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2086, getvar[target]]
+actiontrycastbyidontarget[getvar[Strength], getvar[target]]
 i
 7
 TABLE
@@ -1847,15 +2624,28 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2086, getvar[target]]
+actiontrycastbyidontarget[getvar[Strength], getvar[target]]
 s
 Buff-Attributes
 i
-4
+3
 i
 3
+TABLE
+2
+K
+V
+n
+n
+2
+i
+4
 s
 You cast Might of the 5 Mules
+i
+4
+s
+You cast Strength
 TABLE
 2
 K
@@ -1938,7 +2728,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2060, getvar[target]]
+actiontrycastbyidontarget[getvar[Endurance], getvar[target]]
 i
 7
 TABLE
@@ -1951,7 +2741,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2060, getvar[target]]
+actiontrycastbyidontarget[getvar[Endurance], getvar[target]]
 i
 7
 TABLE
@@ -1964,15 +2754,28 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2060, getvar[target]]
+actiontrycastbyidontarget[getvar[Endurance], getvar[target]]
 s
 Buff-Attributes
 i
-4
+3
 i
 3
+TABLE
+2
+K
+V
+n
+n
+2
+i
+4
 s
 You cast Temeritous Touch
+i
+4
+s
+You cast Endurance
 TABLE
 2
 K
@@ -2033,7 +2836,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2058, getvar[target]]
+actiontrycastbyidontarget[getvar[Coordination], getvar[target]]
 i
 7
 TABLE
@@ -2046,7 +2849,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2058, getvar[target]]
+actiontrycastbyidontarget[getvar[Coordination], getvar[target]]
 i
 7
 TABLE
@@ -2059,15 +2862,28 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2058, getvar[target]]
+actiontrycastbyidontarget[getvar[Coordination], getvar[target]]
 s
 Buff-Attributes
 i
-4
+3
 i
 3
+TABLE
+2
+K
+V
+n
+n
+2
+i
+4
 s
 You cast Boon of Refinement
+i
+4
+s
+You cast Coordination
 TABLE
 2
 K
@@ -2128,7 +2944,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2080, getvar[target]]
+actiontrycastbyidontarget[getvar[Quickness], getvar[target]]
 i
 7
 TABLE
@@ -2141,7 +2957,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2080, getvar[target]]
+actiontrycastbyidontarget[getvar[Quickness], getvar[target]]
 i
 7
 TABLE
@@ -2154,15 +2970,28 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2080, getvar[target]]
+actiontrycastbyidontarget[getvar[Quickness], getvar[target]]
 s
 Buff-Attributes
 i
-4
+3
 i
 3
+TABLE
+2
+K
+V
+n
+n
+2
+i
+4
 s
 You cast Ogfoot
+i
+4
+s
+You cast Quickness
 TABLE
 2
 K
@@ -2223,7 +3052,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2066, getvar[target]]
+actiontrycastbyidontarget[getvar[Focus], getvar[target]]
 i
 7
 TABLE
@@ -2236,7 +3065,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2066, getvar[target]]
+actiontrycastbyidontarget[getvar[Focus], getvar[target]]
 i
 7
 TABLE
@@ -2249,15 +3078,28 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2066, getvar[target]]
+actiontrycastbyidontarget[getvar[Focus], getvar[target]]
 s
 Buff-Attributes
 i
-4
+3
 i
 3
+TABLE
+2
+K
+V
+n
+n
+2
+i
+4
 s
 You cast Calming Gaze
+i
+4
+s
+You cast Focus
 TABLE
 2
 K
@@ -2340,7 +3182,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2090, getvar[target]]
+actiontrycastbyidontarget[getvar[Willpower], getvar[target]]
 i
 7
 TABLE
@@ -2353,7 +3195,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2090, getvar[target]]
+actiontrycastbyidontarget[getvar[Willpower], getvar[target]]
 i
 7
 TABLE
@@ -2366,15 +3208,28 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2090, getvar[target]]
+actiontrycastbyidontarget[getvar[Willpower], getvar[target]]
 s
 Buff-Attributes
 i
-4
+3
 i
 3
+TABLE
+2
+K
+V
+n
+n
+2
+i
+4
 s
 You cast Bolstered Will
+i
+4
+s
+You cast Willpower
 TABLE
 2
 K
@@ -2649,7 +3504,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[getvar[baneidone], getvar[target]]
+actiontrycastbyidontarget[getvar[Impen], getvar[target]]
 i
 7
 TABLE
@@ -2662,7 +3517,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[getvar[baneidone], getvar[target]]
+actiontrycastbyidontarget[getvar[Impen], getvar[target]]
 i
 7
 TABLE
@@ -2675,7 +3530,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[getvar[baneidone], getvar[target]]
+actiontrycastbyidontarget[getvar[Impen], getvar[target]]
 s
 Buff-Bane
 i
@@ -2688,7 +3543,7 @@ K
 V
 n
 n
-2
+3
 i
 4
 s
@@ -2697,6 +3552,10 @@ i
 4
 s
 You cast Incantation of Impenetrability
+i
+4
+s
+You cast Impenetrability
 TABLE
 2
 K
@@ -2757,7 +3616,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[getvar[baneidtwo], getvar[target]]
+actiontrycastbyidontarget[getvar[BludgeBane], getvar[target]]
 i
 7
 TABLE
@@ -2770,7 +3629,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[getvar[baneidtwo], getvar[target]]
+actiontrycastbyidontarget[getvar[BludgeBane], getvar[target]]
 i
 7
 TABLE
@@ -2783,7 +3642,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[getvar[baneidtwo], getvar[target]]
+actiontrycastbyidontarget[getvar[BludgeBane], getvar[target]]
 s
 Buff-Bane
 i
@@ -2796,7 +3655,7 @@ K
 V
 n
 n
-2
+3
 i
 4
 s
@@ -2805,6 +3664,10 @@ i
 4
 s
 You cast Incantation of Bludgeon Bane
+i
+4
+s
+You cast Bludgeon Bane
 TABLE
 2
 K
@@ -2865,7 +3728,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[getvar[baneidthree], getvar[target]]
+actiontrycastbyidontarget[getvar[BladeBane], getvar[target]]
 i
 7
 TABLE
@@ -2878,7 +3741,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[getvar[baneidthree], getvar[target]]
+actiontrycastbyidontarget[getvar[BladeBane], getvar[target]]
 i
 7
 TABLE
@@ -2891,7 +3754,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[getvar[baneidthree], getvar[target]]
+actiontrycastbyidontarget[getvar[BladeBane], getvar[target]]
 s
 Buff-Bane
 i
@@ -2904,7 +3767,7 @@ K
 V
 n
 n
-2
+3
 i
 4
 s
@@ -2913,6 +3776,10 @@ i
 4
 s
 You cast Incantation of Blade Bane
+i
+4
+s
+You cast Blade Bane
 TABLE
 2
 K
@@ -2973,7 +3840,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[getvar[baneidfour], getvar[target]]
+actiontrycastbyidontarget[getvar[PierceBane], getvar[target]]
 i
 7
 TABLE
@@ -2986,7 +3853,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[getvar[baneidfour], getvar[target]]
+actiontrycastbyidontarget[getvar[PierceBane], getvar[target]]
 i
 7
 TABLE
@@ -2999,7 +3866,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[getvar[baneidfour], getvar[target]]
+actiontrycastbyidontarget[getvar[PierceBane], getvar[target]]
 s
 Buff-Bane
 i
@@ -3012,7 +3879,7 @@ K
 V
 n
 n
-2
+3
 i
 4
 s
@@ -3021,6 +3888,10 @@ i
 4
 s
 You cast Incantation of Piercing Bane
+i
+4
+s
+You cast Piercing Bane
 TABLE
 2
 K
@@ -3081,7 +3952,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[getvar[baneidfive], getvar[target]]
+actiontrycastbyidontarget[getvar[FireBane], getvar[target]]
 i
 7
 TABLE
@@ -3094,7 +3965,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[getvar[baneidfive], getvar[target]]
+actiontrycastbyidontarget[getvar[FireBane], getvar[target]]
 i
 7
 TABLE
@@ -3107,7 +3978,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[getvar[baneidfive], getvar[target]]
+actiontrycastbyidontarget[getvar[FireBane], getvar[target]]
 s
 Buff-Bane
 i
@@ -3120,7 +3991,7 @@ K
 V
 n
 n
-2
+3
 i
 4
 s
@@ -3129,6 +4000,10 @@ i
 4
 s
 You cast Incantation of Flame Bane
+i
+4
+s
+You cast Flame Bane
 TABLE
 2
 K
@@ -3189,7 +4064,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[getvar[baneidsix], getvar[target]]
+actiontrycastbyidontarget[getvar[ColdBane], getvar[target]]
 i
 7
 TABLE
@@ -3202,7 +4077,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[getvar[baneidsix], getvar[target]]
+actiontrycastbyidontarget[getvar[ColdBane], getvar[target]]
 i
 7
 TABLE
@@ -3215,7 +4090,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[getvar[baneidsix], getvar[target]]
+actiontrycastbyidontarget[getvar[ColdBane], getvar[target]]
 s
 Buff-Bane
 i
@@ -3228,7 +4103,7 @@ K
 V
 n
 n
-2
+3
 i
 4
 s
@@ -3237,6 +4112,10 @@ i
 4
 s
 You cast Incantation of Frost Bane
+i
+4
+s
+You cast Frost Bane
 TABLE
 2
 K
@@ -3297,7 +4176,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[getvar[baneidseven], getvar[target]]
+actiontrycastbyidontarget[getvar[LightBane], getvar[target]]
 i
 7
 TABLE
@@ -3310,7 +4189,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[getvar[baneidseven], getvar[target]]
+actiontrycastbyidontarget[getvar[LightBane], getvar[target]]
 i
 7
 TABLE
@@ -3323,7 +4202,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[getvar[baneidseven], getvar[target]]
+actiontrycastbyidontarget[getvar[LightBane], getvar[target]]
 s
 Buff-Bane
 i
@@ -3336,7 +4215,7 @@ K
 V
 n
 n
-2
+3
 i
 4
 s
@@ -3345,6 +4224,10 @@ i
 4
 s
 You cast Incantation of Lightning Bane
+i
+4
+s
+You cast Lightning Bane
 TABLE
 2
 K
@@ -3405,7 +4288,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[getvar[baneideight], getvar[target]]
+actiontrycastbyidontarget[getvar[AcidBane], getvar[target]]
 i
 7
 TABLE
@@ -3418,7 +4301,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[getvar[baneideight], getvar[target]]
+actiontrycastbyidontarget[getvar[AcidBane], getvar[target]]
 i
 7
 TABLE
@@ -3431,7 +4314,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[getvar[baneideight], getvar[target]]
+actiontrycastbyidontarget[getvar[AcidBane], getvar[target]]
 s
 Buff-Bane
 i
@@ -3444,7 +4327,7 @@ K
 V
 n
 n
-2
+3
 i
 4
 s
@@ -3453,6 +4336,10 @@ i
 4
 s
 You cast Incantation of Acid Bane
+i
+4
+s
+You cast Acid Bane
 TABLE
 2
 K
@@ -4446,7 +5333,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[getvar[buffidone], getvar[target]]
+actiontrycastbyidontarget[getvar[Defender], getvar[target]]
 i
 7
 TABLE
@@ -4459,7 +5346,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[getvar[buffidone], getvar[target]]
+actiontrycastbyidontarget[getvar[Defender], getvar[target]]
 i
 7
 TABLE
@@ -4472,7 +5359,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[getvar[buffidone], getvar[target]]
+actiontrycastbyidontarget[getvar[Defender], getvar[target]]
 s
 Buff-Item
 i
@@ -4489,7 +5376,7 @@ n
 i
 4
 s
-You cast Aura of Defender Other VII
+You cast Aura of Defender
 i
 4
 s
@@ -4563,7 +5450,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[getvar[buffidtwo], getvar[target]]
+actiontrycastbyidontarget[getvar[HermLink], getvar[target]]
 i
 7
 TABLE
@@ -4576,7 +5463,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[getvar[buffidtwo], getvar[target]]
+actiontrycastbyidontarget[getvar[HermLink], getvar[target]]
 i
 7
 TABLE
@@ -4589,7 +5476,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[getvar[buffidtwo], getvar[target]]
+actiontrycastbyidontarget[getvar[HermLink], getvar[target]]
 s
 Buff-Item
 i
@@ -4606,7 +5493,7 @@ n
 i
 4
 s
-You cast Aura of Hermetic Link Other VII
+You cast Aura of Hermetic Link
 i
 4
 s
@@ -4728,7 +5615,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[getvar[buffidsix], getvar[target]]
+actiontrycastbyidontarget[getvar[SpiritD], getvar[target]]
 i
 7
 TABLE
@@ -4741,7 +5628,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[getvar[buffidsix], getvar[target]]
+actiontrycastbyidontarget[getvar[SpiritD], getvar[target]]
 i
 7
 TABLE
@@ -4754,7 +5641,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[getvar[buffidsix], getvar[target]]
+actiontrycastbyidontarget[getvar[SpiritD], getvar[target]]
 s
 Buff-Item
 i
@@ -4771,7 +5658,7 @@ n
 i
 4
 s
-You cast Aura of Spirit Drinker Other VII
+You cast Aura of Spirit Drinker
 i
 4
 s
@@ -4884,7 +5771,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[getvar[buffidthree], getvar[target]]
+actiontrycastbyidontarget[getvar[BloodD], getvar[target]]
 i
 7
 TABLE
@@ -4897,7 +5784,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[getvar[buffidthree], getvar[target]]
+actiontrycastbyidontarget[getvar[BloodD], getvar[target]]
 i
 7
 TABLE
@@ -4910,7 +5797,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[getvar[buffidthree], getvar[target]]
+actiontrycastbyidontarget[getvar[BloodD], getvar[target]]
 s
 Buff-Item
 i
@@ -4927,7 +5814,7 @@ n
 i
 4
 s
-You cast Aura of Blood Drinker Other VII
+You cast Aura of Blood Drinker
 i
 4
 s
@@ -5014,7 +5901,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[getvar[buffidfour], getvar[target]]
+actiontrycastbyidontarget[getvar[HeartS], getvar[target]]
 i
 7
 TABLE
@@ -5027,7 +5914,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[getvar[buffidfour], getvar[target]]
+actiontrycastbyidontarget[getvar[HeartS], getvar[target]]
 i
 7
 TABLE
@@ -5040,7 +5927,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[getvar[buffidfour], getvar[target]]
+actiontrycastbyidontarget[getvar[HeartS], getvar[target]]
 s
 Buff-Item
 i
@@ -5129,7 +6016,7 @@ n
 i
 4
 s
-You cast Aura of Heart Seeker Other VII
+You cast Aura of Heart Seeker
 i
 4
 s
@@ -5216,7 +6103,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[getvar[buffidfive], getvar[target]]
+actiontrycastbyidontarget[getvar[SwiftK], getvar[target]]
 i
 7
 TABLE
@@ -5229,7 +6116,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[getvar[buffidfive], getvar[target]]
+actiontrycastbyidontarget[getvar[SwiftK], getvar[target]]
 i
 7
 TABLE
@@ -5242,7 +6129,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[getvar[buffidfive], getvar[target]]
+actiontrycastbyidontarget[getvar[SwiftK], getvar[target]]
 s
 Buff-Item
 i
@@ -5309,11 +6196,11 @@ n
 i
 4
 s
-You cast Aura of Swift Killer Other VII
+You cast Aura of Swift Killer
 i
 4
 s
-Aura of Incantation of Swift Killer Other
+You cast Aura of Incantation of Swift Killer Other
 TABLE
 2
 K
@@ -5592,7 +6479,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2052, getvar[target]]
+actiontrycastbyidontarget[getvar[Armor], getvar[target]]
 i
 7
 TABLE
@@ -5605,7 +6492,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2052, getvar[target]]
+actiontrycastbyidontarget[getvar[Armor], getvar[target]]
 i
 7
 TABLE
@@ -5618,15 +6505,28 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2052, getvar[target]]
+actiontrycastbyidontarget[getvar[Armor], getvar[target]]
 s
 Buff-Life
 i
-4
+3
 i
 3
+TABLE
+2
+K
+V
+n
+n
+2
+i
+4
 s
 You cast Executor's Boon
+i
+4
+s
+You cast Armor
 TABLE
 2
 K
@@ -5696,7 +6596,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2150, getvar[target]]
+actiontrycastbyidontarget[getvar[SlashProt], getvar[target]]
 i
 7
 TABLE
@@ -5709,7 +6609,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2150, getvar[target]]
+actiontrycastbyidontarget[getvar[SlashProt], getvar[target]]
 i
 7
 TABLE
@@ -5722,11 +6622,11 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2150, getvar[target]]
+actiontrycastbyidontarget[getvar[SlashProt], getvar[target]]
 s
 Buff-Life
 i
-2
+3
 i
 3
 TABLE
@@ -5735,11 +6635,15 @@ K
 V
 n
 n
-1
+2
 i
 4
 s
-You cast Boon of the Blade Turner
+You cast Boon of the Blade
+i
+4
+s
+You cast Blade
 TABLE
 2
 K
@@ -5809,7 +6713,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2152, getvar[target]]
+actiontrycastbyidontarget[getvar[BludgeProt], getvar[target]]
 i
 7
 TABLE
@@ -5822,7 +6726,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2152, getvar[target]]
+actiontrycastbyidontarget[getvar[BludgeProt], getvar[target]]
 i
 7
 TABLE
@@ -5835,11 +6739,11 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2152, getvar[target]]
+actiontrycastbyidontarget[getvar[BludgeProt], getvar[target]]
 s
 Buff-Life
 i
-2
+3
 i
 3
 TABLE
@@ -5848,11 +6752,15 @@ K
 V
 n
 n
-1
+2
 i
 4
 s
-You cast Boon of the Mace Turner
+You cast Boon of the Mace
+i
+4
+s
+You cast Bludgeon
 TABLE
 2
 K
@@ -5922,7 +6830,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2160, getvar[target]]
+actiontrycastbyidontarget[getvar[PierceProt], getvar[target]]
 i
 7
 TABLE
@@ -5935,7 +6843,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2160, getvar[target]]
+actiontrycastbyidontarget[getvar[PierceProt], getvar[target]]
 i
 7
 TABLE
@@ -5948,11 +6856,11 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2160, getvar[target]]
+actiontrycastbyidontarget[getvar[PierceProt], getvar[target]]
 s
 Buff-Life
 i
-2
+3
 i
 3
 TABLE
@@ -5961,11 +6869,15 @@ K
 V
 n
 n
-1
+2
 i
 4
 s
-You cast Boon of the Arrow Turner
+You cast Boon of the Arrow
+i
+4
+s
+You cast Piercing
 TABLE
 2
 K
@@ -6035,7 +6947,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2148, getvar[target]]
+actiontrycastbyidontarget[getvar[AcidProt], getvar[target]]
 i
 7
 TABLE
@@ -6048,7 +6960,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2148, getvar[target]]
+actiontrycastbyidontarget[getvar[AcidProt], getvar[target]]
 i
 7
 TABLE
@@ -6061,11 +6973,11 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2148, getvar[target]]
+actiontrycastbyidontarget[getvar[AcidProt], getvar[target]]
 s
 Buff-Life
 i
-2
+3
 i
 3
 TABLE
@@ -6074,11 +6986,15 @@ K
 V
 n
 n
-1
+2
 i
 4
 s
 You cast Caustic Boon
+i
+4
+s
+You cast Acid
 TABLE
 2
 K
@@ -6148,7 +7064,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2158, getvar[target]]
+actiontrycastbyidontarget[getvar[LightProt], getvar[target]]
 i
 7
 TABLE
@@ -6161,7 +7077,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2158, getvar[target]]
+actiontrycastbyidontarget[getvar[LightProt], getvar[target]]
 i
 7
 TABLE
@@ -6174,11 +7090,11 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2158, getvar[target]]
+actiontrycastbyidontarget[getvar[LightProt], getvar[target]]
 s
 Buff-Life
 i
-2
+3
 i
 3
 TABLE
@@ -6187,11 +7103,15 @@ K
 V
 n
 n
-1
+2
 i
 4
 s
 You cast Storm's Boon
+i
+4
+s
+You cast Lightning
 TABLE
 2
 K
@@ -6261,7 +7181,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2154, getvar[target]]
+actiontrycastbyidontarget[getvar[ColdProt], getvar[target]]
 i
 7
 TABLE
@@ -6274,7 +7194,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2154, getvar[target]]
+actiontrycastbyidontarget[getvar[ColdProt], getvar[target]]
 i
 7
 TABLE
@@ -6287,11 +7207,11 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2154, getvar[target]]
+actiontrycastbyidontarget[getvar[ColdProt], getvar[target]]
 s
 Buff-Life
 i
-2
+3
 i
 3
 TABLE
@@ -6300,11 +7220,15 @@ K
 V
 n
 n
-1
+2
 i
 4
 s
 You cast Icy Boon
+i
+4
+s
+You cast Cold
 TABLE
 2
 K
@@ -6374,7 +7298,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2156, getvar[target]]
+actiontrycastbyidontarget[getvar[FireProt], getvar[target]]
 i
 7
 TABLE
@@ -6387,7 +7311,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2156, getvar[target]]
+actiontrycastbyidontarget[getvar[FireProt], getvar[target]]
 i
 7
 TABLE
@@ -6400,11 +7324,11 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2156, getvar[target]]
+actiontrycastbyidontarget[getvar[FireProt], getvar[target]]
 s
 Buff-Life
 i
-2
+3
 i
 3
 TABLE
@@ -6413,11 +7337,15 @@ K
 V
 n
 n
-1
+2
 i
 4
 s
 You cast Fiery Boon
+i
+4
+s
+You cast Fire
 TABLE
 2
 K
@@ -6487,7 +7415,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2184, getvar[target]]
+actiontrycastbyidontarget[getvar[Regen], getvar[target]]
 i
 7
 TABLE
@@ -6500,7 +7428,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2184, getvar[target]]
+actiontrycastbyidontarget[getvar[Rejuv], getvar[target]]
 i
 7
 TABLE
@@ -6513,11 +7441,11 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2184, getvar[target]]
+actiontrycastbyidontarget[getvar[Renew], getvar[target]]
 s
 Buff-Life
 i
-2
+3
 i
 3
 TABLE
@@ -6526,11 +7454,15 @@ K
 V
 n
 n
-1
+2
 i
 4
 s
 You cast Hydra's Head
+i
+4
+s
+You cast Regen
 TABLE
 2
 K
@@ -6600,7 +7532,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2186, getvar[target]]
+actiontrycastbyidontarget[getvar[Rejuv], getvar[target]]
 i
 7
 TABLE
@@ -6613,7 +7545,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2186, getvar[target]]
+actiontrycastbyidontarget[getvar[Rejuv], getvar[target]]
 i
 7
 TABLE
@@ -6626,11 +7558,11 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2186, getvar[target]]
+actiontrycastbyidontarget[getvar[Rejuv], getvar[target]]
 s
 Buff-Life
 i
-2
+3
 i
 3
 TABLE
@@ -6639,11 +7571,15 @@ K
 V
 n
 n
-1
+2
 i
 4
 s
 You cast Tenaciousness
+i
+4
+s
+You cast Rejuv
 TABLE
 2
 K
@@ -6713,7 +7649,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2182, getvar[target]]
+actiontrycastbyidontarget[getvar[Renew], getvar[target]]
 i
 7
 TABLE
@@ -6726,7 +7662,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2182, getvar[target]]
+actiontrycastbyidontarget[getvar[Renew], getvar[target]]
 i
 7
 TABLE
@@ -6739,11 +7675,11 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2182, getvar[target]]
+actiontrycastbyidontarget[getvar[Renew], getvar[target]]
 s
 Buff-Life
 i
-2
+3
 i
 3
 TABLE
@@ -6752,11 +7688,15 @@ K
 V
 n
 n
-1
+2
 i
 4
 s
 You cast Battlemage's Boon
+i
+4
+s
+You cast Mana Renew
 TABLE
 2
 K
@@ -6884,6 +7824,2018 @@ s
 Buff-Item
 s
 Buff-Life
+i
+26
+i
+3
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+istrue[getvar[OtherSixes]]
+TABLE
+2
+K
+V
+n
+n
+49
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Strength, 1337]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Endurance, 1360]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Coordination, 1384]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Quickness, 1408]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Focus, 1432]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Willpower, 1456]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Armor, 1317]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[SlashProt, 1120]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[BludgeProt, 1029]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[PierceProt, 1144]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[AcidProt, 514]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[LightProt, 1077]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[ColdProt, 1041]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[FireProt, 1096]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Regen, 164]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Rejuv, 188]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Renew, 211]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[War, 640]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[MissileW, 466]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Fletching, 1738]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Healing, 885]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Finesse, 321]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Light, 297]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Heavy, 417]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Shield, 5848]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Cooking, 1714]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Alchemy, 1762]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Lockpick, 933]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[ItemTink, 737]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[MagicTink, 761]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[WeapTink, 785]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[ArmorTink, 713]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Void, 5408]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[TwoHand, 5096]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Summoning, 6113]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[NuhEnlight, 3525]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[ArcEnlight, 3511]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[MeleeD, 244]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[MagicD, 273]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[MissileD, 255]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Sprint, 993]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Jump, 981]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[LifeMagic, 616]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[CreatureEnch, 568]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[ItemEnch, 592]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[ManaCon, 664]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[ArcaneLore, 689]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Loyalty, 957]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Leadership, 909]
+s
+Buff-Presets
+i
+26
+i
+3
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+istrue[getvar[OtherSevens]]
+TABLE
+2
+K
+V
+n
+n
+49
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Strength, 2086]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Endurance, 2060]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Coordination, 2058]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Quickness, 2080]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Focus, 2066]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Willpower, 2090]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Armor, 2052]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[SlashProt, 2150]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[BludgeProt, 2152]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[PierceProt, 2160]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[AcidProt, 2148]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[LightProt, 2158]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[ColdProt, 2154]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[FireProt, 2156]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Regen, 2184]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Rejuv, 2186]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Renew, 2182]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Summoning, 6114]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[NuhEnlight, 3526]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[ArcEnlight,3512]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Lockpick, 2270]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[MeleeD, 2244]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[MagicD, 2280]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[MissileD, 2242]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Sprint, 2300]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Jump, 2256]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[LifeMagic, 2266]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[CreatureEnch, 2214]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[ItemEnch, 2248]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[ManaCon, 2286]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[ArcaneLore, 2194]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Loyalty, 2232]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Leadership, 2262]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[War, 2322]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[MissileW, getvar[MWID]]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Fletching, 2236]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Healing, 2240]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Finesse, 2222]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Light, 2202]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Heavy, 2308]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Shield, 5849]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Cooking, 2210]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Alchemy, 2190]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[ItemTink, 2250]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[MagicTink, 2276]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[WeapTink, 2324]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[ArmorTink, 2196]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Void, 5409]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[TwoHand, 5097]
+s
+Buff-Presets
+i
+26
+i
+3
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+istrue[getvar[BaneSixes]]
+TABLE
+2
+K
+V
+n
+n
+8
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Impen, 1486]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[BludgeBane, 1516]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[BladeBane, 1562]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[PierceBane, 1574]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[FireBane, 1552]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[ColdBane, 1528]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[LightBane, 1540]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[AcidBane, 1498]
+s
+Buff-Presets
+i
+26
+i
+3
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+istrue[getvar[BaneSevens]]
+TABLE
+2
+K
+V
+n
+n
+8
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Impen, 2108]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[BludgeBane, 2098]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[BladeBane, 2094]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[PierceBane, 2113]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[FireBane, 2102]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[ColdBane, 2104]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[LightBane, 2110]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[AcidBane, 2092]
+s
+Buff-Presets
+i
+26
+i
+3
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+istrue[getvar[BaneEights]]
+TABLE
+2
+K
+V
+n
+n
+8
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Impen, 4407]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[BludgeBane, 4397]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[BladeBane, 4393]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[PierceBane, 4412]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[FireBane, 4401]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[ColdBane, 4403]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[LightBane, 4409]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[AcidBane, 4391]
+s
+Buff-Presets
+i
+26
+i
+3
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+istrue[getvar[ItemSixes]]
+TABLE
+2
+K
+V
+n
+n
+6
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Defender, 6004]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[HermLink, 5987]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[BloodD, 5995]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[HeartS, 6012]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[SwiftK, 6029]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[SpiritD, 6020]
+s
+Buff-Presets
+i
+26
+i
+3
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+istrue[getvar[ItemSevens]]
+TABLE
+2
+K
+V
+n
+n
+6
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Defender, 6005]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[HermLink, 5988]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[BloodD, 5996]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[HeartS, 6013]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[SwiftK, 6030]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[SpiritD, 6021]
+s
+Buff-Presets
+i
+26
+i
+3
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+istrue[getvar[ItemEights]]
+TABLE
+2
+K
+V
+n
+n
+6
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Defender, 6006]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[HermLink, 5989]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[BloodD, 5998]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[HeartS, 6014]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[SwiftK, 6031]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[SpiritD, 6023]
+s
+Buff-Presets
 i
 26
 i
@@ -7375,466 +10327,6 @@ n
 s
 e
 s
-getvar[BaneEights]==true
-TABLE
-2
-K
-V
-n
-n
-8
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-setvar[baneidone, 4407]
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-setvar[baneidtwo, 4397]
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-setvar[baneidthree, 4393]
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-setvar[baneidfour, 4412]
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-setvar[baneidfive, 4401]
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-setvar[baneidsix, 4403]
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-setvar[baneidseven, 4409]
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-setvar[baneideight, 4391]
-s
-Buff-Presets
-i
-26
-i
-3
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-getvar[BaneEights]==false
-TABLE
-2
-K
-V
-n
-n
-8
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-setvar[baneidone, 2108]
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-setvar[baneidtwo, 2098]
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-setvar[baneidthree, 2094]
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-setvar[baneidfour, 2113]
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-setvar[baneidfive, 2102]
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-setvar[baneidsix, 2104]
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-setvar[baneidseven, 2110]
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-setvar[baneideight, 2092]
-s
-Buff-Presets
-i
-26
-i
-3
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-getvar[ItemEights]==true
-TABLE
-2
-K
-V
-n
-n
-6
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-setvar[buffidone, 6006]
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-setvar[buffidtwo, 5989]
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-setvar[buffidthree, 5998]
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-setvar[buffidfour, 6014]
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-setvar[buffidfive, 6031]
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-setvar[buffidsix, 6023]
-s
-Buff-Presets
-i
-26
-i
-3
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-getvar[ItemEights]==false
-TABLE
-2
-K
-V
-n
-n
-6
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-setvar[buffidone, 6005]
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-setvar[buffidtwo, 5988]
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-setvar[buffidthree, 5996]
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-setvar[buffidfour, 6013]
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-setvar[buffidfive, 6030]
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-setvar[buffidsix, 6021]
-s
-Buff-Presets
-i
-26
-i
-3
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
 getvar[trigger]==tink
 TABLE
 2
@@ -8116,6 +10608,60 @@ Buff-Self
 s
 Buff-Self
 i
+3
+i
+5
+TABLE
+2
+K
+V
+n
+n
+2
+i
+26
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+getcharvital_current[3]<=getvar[MinMana]
+i
+26
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+getcharvital_current[2]<=getvar[MinStamina]
+TABLE
+2
+k
+v
+n
+n
+2
+s
+st
+s
+Cast-Vitals
+s
+ret
+s
+Buff-Self
+s
+Buff-Self
+i
 26
 i
 3
@@ -8149,7 +10695,7 @@ n
 s
 e
 s
-actiontrycastbyid[2067]
+actiontrycastbyid[getvar[FocusSelf]]
 i
 7
 TABLE
@@ -8162,7 +10708,7 @@ n
 s
 e
 s
-actiontrycastbyid[2067]
+actiontrycastbyid[getvar[FocusSelf]]
 i
 7
 TABLE
@@ -8175,15 +10721,32 @@ n
 s
 e
 s
-actiontrycastbyid[2067]
+actiontrycastbyid[getvar[FocusSelf]]
 s
 Buff-Self
 i
-4
+3
 i
 3
+TABLE
+2
+K
+V
+n
+n
+3
+i
+4
 s
 You cast Inner Calm
+i
+4
+s
+You cast Incantation of Focus
+i
+4
+s
+You cast Focus Self
 TABLE
 2
 K
@@ -8244,7 +10807,7 @@ n
 s
 e
 s
-actiontrycastbyid[2091]
+actiontrycastbyid[getvar[WillpowerSelf]]
 i
 7
 TABLE
@@ -8257,7 +10820,7 @@ n
 s
 e
 s
-actiontrycastbyid[2091]
+actiontrycastbyid[getvar[WillpowerSelf]]
 i
 7
 TABLE
@@ -8270,15 +10833,32 @@ n
 s
 e
 s
-actiontrycastbyid[2091]
+actiontrycastbyid[getvar[WillpowerSelf]]
 s
 Buff-Self
 i
-4
+3
 i
 3
+TABLE
+2
+K
+V
+n
+n
+3
+i
+4
 s
 You cast Mind Blossom
+i
+4
+s
+You cast Incantation of Will
+i
+4
+s
+You cast Willpower Self
 TABLE
 2
 K
@@ -8339,7 +10919,7 @@ n
 s
 e
 s
-actiontrycastbyid[2215]
+actiontrycastbyid[getvar[CreatureEnchSelf]]
 i
 7
 TABLE
@@ -8352,7 +10932,7 @@ n
 s
 e
 s
-actiontrycastbyid[2215]
+actiontrycastbyid[getvar[CreatureEnchSelf]]
 i
 7
 TABLE
@@ -8365,15 +10945,142 @@ n
 s
 e
 s
-actiontrycastbyid[2215]
+actiontrycastbyid[getvar[CreatureEnchSelf]]
 s
 Buff-Self
 i
-4
+2
 i
 3
+TABLE
+2
+K
+V
+n
+n
+3
+i
+3
+TABLE
+2
+K
+V
+n
+n
+3
+i
+4
 s
 You cast Adja's Blessing
+i
+4
+s
+You cast Incantation of Creature
+i
+4
+s
+You cast Creature
+i
+26
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+getvar[PreBuffs]==1
+i
+26
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+getvar[PreBuffPause]==0
+TABLE
+2
+K
+V
+n
+n
+4
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[PreBuffPause, 1]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[PreBuffs, 0]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[buff, 9]
+i
+1
+s
+Buff-Self-Spell-Handler
+s
+Buff-Self
+i
+3
+i
+3
+TABLE
+2
+K
+V
+n
+n
+3
+i
+4
+s
+You cast Adja's Blessing
+i
+4
+s
+You cast Incantation of Creature
+i
+4
+s
+You cast Creature Enchantment Mastery Self
 TABLE
 2
 K
@@ -8410,7 +11117,7 @@ K
 V
 n
 n
-2
+1
 i
 26
 TABLE
@@ -8424,19 +11131,6 @@ s
 e
 s
 getvar[buff]==6
-i
-26
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-getvar[SelfEights]==false
 TABLE
 2
 K
@@ -8456,7 +11150,7 @@ n
 s
 e
 s
-actiontrycastbyid[2249]
+actiontrycastbyid[getvar[ItemEnchSelf]]
 i
 7
 TABLE
@@ -8469,7 +11163,7 @@ n
 s
 e
 s
-actiontrycastbyid[2249]
+actiontrycastbyid[getvar[ItemEnchSelf]]
 i
 7
 TABLE
@@ -8482,15 +11176,32 @@ n
 s
 e
 s
-actiontrycastbyid[2249]
+actiontrycastbyid[getvar[ItemEnchSelf]]
 s
 Buff-Self
 i
-4
+3
 i
 3
+TABLE
+2
+K
+V
+n
+n
+3
+i
+4
 s
 You cast Celcynd's Blessing
+i
+4
+s
+You cast Incantation of Item
+i
+4
+s
+You cast Item Enchantment Mastery Self
 TABLE
 2
 K
@@ -8527,7 +11238,7 @@ K
 V
 n
 n
-2
+1
 i
 26
 TABLE
@@ -8541,19 +11252,6 @@ s
 e
 s
 getvar[buff]==5
-i
-26
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-getvar[SelfEights]==false
 TABLE
 2
 K
@@ -8573,7 +11271,7 @@ n
 s
 e
 s
-actiontrycastbyid[2267]
+actiontrycastbyid[getvar[LifeMagicSelf]]
 i
 7
 TABLE
@@ -8586,7 +11284,7 @@ n
 s
 e
 s
-actiontrycastbyid[2267]
+actiontrycastbyid[getvar[LifeMagicSelf]]
 i
 7
 TABLE
@@ -8599,15 +11297,32 @@ n
 s
 e
 s
-actiontrycastbyid[2267]
+actiontrycastbyid[getvar[LifeMagicSelf]]
 s
 Buff-Self
 i
-4
+3
 i
 3
+TABLE
+2
+K
+V
+n
+n
+3
+i
+4
 s
 You cast Harlune's Blessing
+i
+4
+s
+You cast Incantation of Life
+i
+4
+s
+You cast Life Magic
 TABLE
 2
 K
@@ -8644,7 +11359,7 @@ K
 V
 n
 n
-2
+1
 i
 26
 TABLE
@@ -8658,19 +11373,6 @@ s
 e
 s
 getvar[buff]==4
-i
-26
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-getvar[SelfEights]==false
 TABLE
 2
 K
@@ -8690,7 +11392,7 @@ n
 s
 e
 s
-actiontrycastbyid[2287]
+actiontrycastbyid[getvar[ManaCSelf]]
 i
 7
 TABLE
@@ -8703,7 +11405,7 @@ n
 s
 e
 s
-actiontrycastbyid[2287]
+actiontrycastbyid[getvar[ManaCSelf]]
 i
 7
 TABLE
@@ -8716,15 +11418,32 @@ n
 s
 e
 s
-actiontrycastbyid[2287]
+actiontrycastbyid[getvar[ManaCSelf]]
 s
 Buff-Self
 i
-4
+3
 i
 3
+TABLE
+2
+K
+V
+n
+n
+3
+i
+4
 s
 You cast Nuhmudira's Blessing
+i
+4
+s
+You cast Incantation of Mana
+i
+4
+s
+You cast Mana Conversion
 TABLE
 2
 K
@@ -8761,7 +11480,7 @@ K
 V
 n
 n
-2
+1
 i
 26
 TABLE
@@ -8775,19 +11494,6 @@ s
 e
 s
 getvar[buff]==3
-i
-26
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-getvar[SelfEights]==false
 TABLE
 2
 K
@@ -8807,7 +11513,7 @@ n
 s
 e
 s
-actiontrycastbyid[2061]
+actiontrycastbyid[getvar[EnduranceSelf]]
 i
 7
 TABLE
@@ -8820,7 +11526,7 @@ n
 s
 e
 s
-actiontrycastbyid[2061]
+actiontrycastbyid[getvar[EnduranceSelf]]
 i
 7
 TABLE
@@ -8833,812 +11539,32 @@ n
 s
 e
 s
-actiontrycastbyid[2061]
+actiontrycastbyid[getvar[EnduranceSelf]]
 s
 Buff-Self
 i
-4
+3
 i
 3
+TABLE
+2
+K
+V
+n
+n
+3
+i
+4
 s
 You cast Perseverance
-TABLE
-2
-K
-V
-n
-n
-2
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-setvar[buff, 11]
-i
-1
-s
-Buff-Self
-s
-Buff-Self
-i
-2
-i
-3
-TABLE
-2
-K
-V
-n
-n
-2
-i
-26
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-getvar[buff]==6
-i
-26
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-getvar[SelfEights]==true
-TABLE
-2
-K
-V
-n
-n
-3
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-actiontrycastbyid[4530]
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-actiontrycastbyid[4530]
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-actiontrycastbyid[4530]
-s
-Buff-Self
 i
 4
-i
-3
 s
-You cast Incantation of Creature Enchantment Mastery Self
-TABLE
-2
-K
-V
-n
-n
-2
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-setvar[buff, 5]
-i
-1
-s
-Buff-Self
-s
-Buff-Self
-i
-2
-i
-3
-TABLE
-2
-K
-V
-n
-n
-2
-i
-26
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-getvar[buff]==5
-i
-26
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-getvar[SelfEights]==true
-TABLE
-2
-K
-V
-n
-n
-3
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-actiontrycastbyid[4305]
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-actiontrycastbyid[4305]
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-actiontrycastbyid[4305]
-s
-Buff-Self
+You cast Incantation of End
 i
 4
-i
-3
 s
-You cast Incantation of Focus Self
-TABLE
-2
-K
-V
-n
-n
-2
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-setvar[buff, 4]
-i
-1
-s
-Buff-Self
-s
-Buff-Self
-i
-2
-i
-3
-TABLE
-2
-K
-V
-n
-n
-2
-i
-26
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-getvar[buff]==4
-i
-26
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-getvar[SelfEights]==true
-TABLE
-2
-K
-V
-n
-n
-3
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-actiontrycastbyid[4329]
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-actiontrycastbyid[4329]
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-actiontrycastbyid[4329]
-s
-Buff-Self
-i
-4
-i
-3
-s
-You cast Incantation of Willpower Self
-TABLE
-2
-K
-V
-n
-n
-2
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-setvar[buff, 3]
-i
-1
-s
-Buff-Self
-s
-Buff-Self
-i
-2
-i
-3
-TABLE
-2
-K
-V
-n
-n
-2
-i
-26
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-getvar[buff]==3
-i
-26
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-getvar[SelfEights]==true
-TABLE
-2
-K
-V
-n
-n
-3
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-actiontrycastbyid[4582]
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-actiontrycastbyid[4582]
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-actiontrycastbyid[4582]
-s
-Buff-Self
-i
-4
-i
-3
-s
-You cast Incantation of Life Magic Mastery Self
-TABLE
-2
-K
-V
-n
-n
-2
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-setvar[buff, 2]
-i
-1
-s
-Buff-Self
-s
-Buff-Self
-i
-2
-i
-3
-TABLE
-2
-K
-V
-n
-n
-2
-i
-26
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-getvar[buff]==2
-i
-26
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-getvar[SelfEights]==true
-TABLE
-2
-K
-V
-n
-n
-3
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-actiontrycastbyid[4564]
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-actiontrycastbyid[4564]
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-actiontrycastbyid[4564]
-s
-Buff-Self
-i
-4
-i
-3
-s
-You cast Incantation of Item Enchantment Mastery Self
-TABLE
-2
-K
-V
-n
-n
-2
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-setvar[buff, 1]
-i
-1
-s
-Buff-Self
-s
-Buff-Self
-i
-2
-i
-3
-TABLE
-2
-K
-V
-n
-n
-2
-i
-26
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-getvar[buff]==1
-i
-26
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-getvar[SelfEights]==true
-TABLE
-2
-K
-V
-n
-n
-3
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-actiontrycastbyid[4602]
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-actiontrycastbyid[4602]
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-actiontrycastbyid[4602]
-s
-Buff-Self
-i
-4
-i
-3
-s
-You cast Incantation of Mana Conversion Mastery Self
-TABLE
-2
-K
-V
-n
-n
-2
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-setvar[buff, 12]
-i
-1
-s
-Buff-Self
-s
-Buff-Self
-i
-26
-i
-3
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-getvar[buff]==12
-TABLE
-2
-K
-V
-n
-n
-3
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-actiontrycastbyid[4299]
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-actiontrycastbyid[4299]
-i
-7
-TABLE
-2
-k
-v
-n
-n
-1
-s
-e
-s
-actiontrycastbyid[4299]
-s
-Buff-Self
-i
-4
-i
-3
-s
-You cast Incantation of Endurance Self
+You cast Endurance
 TABLE
 2
 K
@@ -9699,7 +11625,7 @@ n
 s
 e
 s
-actiontrycastbyid[2117]
+actiontrycastbyid[getvar[HermLinkSelf]]
 i
 7
 TABLE
@@ -9712,7 +11638,7 @@ n
 s
 e
 s
-actiontrycastbyid[2117]
+actiontrycastbyid[getvar[HermLinkSelf]]
 i
 7
 TABLE
@@ -9725,15 +11651,28 @@ n
 s
 e
 s
-actiontrycastbyid[2117]
+actiontrycastbyid[getvar[HermLinkSelf]]
 s
 Buff-Self
 i
-4
+3
 i
 3
+TABLE
+2
+K
+V
+n
+n
+2
+i
+4
 s
 You cast Aura of Mystic's Blessing
+i
+4
+s
+You cast Aura of Hermetic Link
 TABLE
 2
 K
@@ -9794,7 +11733,7 @@ n
 s
 e
 s
-actiontrycastbyid[2263]
+actiontrycastbyid[getvar[LeaderSelf]]
 i
 7
 TABLE
@@ -9807,7 +11746,7 @@ n
 s
 e
 s
-actiontrycastbyid[2263]
+actiontrycastbyid[getvar[LeaderSelf]]
 i
 7
 TABLE
@@ -9820,15 +11759,32 @@ n
 s
 e
 s
-actiontrycastbyid[2263]
+actiontrycastbyid[getvar[LeaderSelf]]
 s
 Buff-Self
 i
-4
+3
 i
 3
+TABLE
+2
+K
+V
+n
+n
+3
+i
+4
 s
 You cast Ar-Pei's Blessing
+i
+4
+s
+You cast Incantation of Leader
+i
+4
+s
+You cast Leadership
 TABLE
 2
 K
@@ -9889,7 +11845,7 @@ n
 s
 e
 s
-actiontrycastbyid[2233]
+actiontrycastbyid[getvar[LoyaltySelf]]
 i
 7
 TABLE
@@ -9902,7 +11858,7 @@ n
 s
 e
 s
-actiontrycastbyid[2233]
+actiontrycastbyid[getvar[LoyaltySelf]]
 i
 7
 TABLE
@@ -9915,15 +11871,32 @@ n
 s
 e
 s
-actiontrycastbyid[2233]
+actiontrycastbyid[getvar[LoyaltySelf]]
 s
 Buff-Self
 i
-4
+3
 i
 3
+TABLE
+2
+K
+V
+n
+n
+3
+i
+4
 s
 You cast Odif's Blessing
+i
+4
+s
+You cast Incantation of Fealty
+i
+4
+s
+You cast Fealty
 TABLE
 2
 K
@@ -10079,7 +12052,7 @@ K
 V
 n
 n
-4
+5
 i
 7
 TABLE
@@ -10120,11 +12093,856 @@ e
 s
 stopwatchstart[getvar[bufftimer]]
 i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[PreBuffPause, 0]
+i
 1
 s
 *** Main Loop ***
 s
 Buff-Self
+i
+2
+i
+3
+TABLE
+2
+K
+V
+n
+n
+3
+i
+26
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+istrue[getvar[PreBuff]]
+i
+26
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+istrue[getvar[SelfSixes]]
+i
+26
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+isfalse[getvar[PreBuffPause]]
+TABLE
+2
+K
+V
+n
+n
+5
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[PreBuffs, 1]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[CreatureEnchSelf, 561]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[FocusSelf, 1425]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[WillpowerSelf, 1449]
+i
+1
+s
+Buff-Self
+s
+Buff-Self-Spell-Handler
+i
+2
+i
+3
+TABLE
+2
+K
+V
+n
+n
+4
+i
+26
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+istrue[getvar[PreBuff]]
+i
+26
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+istrue[getvar[SelfSevens]]
+i
+26
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+isfalse[getvar[PreBuffPause]]
+i
+26
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+isfalse[getvar[PreBuffs]]
+TABLE
+2
+K
+V
+n
+n
+5
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[PreBuffs, 1]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[CreatureEnchSelf, 562]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[FocusSelf, 1426]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[WillpowerSelf, 1450]
+i
+1
+s
+Buff-Self
+s
+Buff-Self-Spell-Handler
+i
+2
+i
+3
+TABLE
+2
+K
+V
+n
+n
+3
+i
+26
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+istrue[getvar[PreBuff]]
+i
+26
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+istrue[getvar[SelfEights]]
+i
+26
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+isfalse[getvar[PreBuffPause]]
+TABLE
+2
+K
+V
+n
+n
+5
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[PreBuffs, true]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[CreatureEnchSelf, 2215]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[FocusSelf, 2067]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[WillpowerSelf, 2091]
+i
+1
+s
+Buff-Self
+s
+Buff-Self-Spell-Handler
+i
+26
+i
+3
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+istrue[getvar[SelfSixes]]
+TABLE
+2
+K
+V
+n
+n
+11
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[FocusSelf, 1426]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[WillpowerSelf, 1450]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[CreatureEnchSelf, 562]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[ItemEnchSelf, 586]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[LifeMagicSelf, 610]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[ManaCSelf, 658]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[EnduranceSelf, 1354]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[HermLinkSelf, 1480]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[LeaderSelf, 903]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[LoyaltySelf, 951]
+i
+1
+s
+Buff-Self
+s
+Buff-Self-Spell-Handler
+i
+26
+i
+3
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+istrue[getvar[SelfSevens]]
+TABLE
+2
+K
+V
+n
+n
+11
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[FocusSelf, 2067]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[WillpowerSelf, 2091]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[CreatureEnchSelf, 2215]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[ItemEnchSelf, 2249]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[LifeMagicSelf, 2267]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[ManaCSelf, 2287]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[EnduranceSelf, 2061]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[HermLinkSelf, 2117]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[LeaderSelf, 2263]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[LoyaltySelf, 2233]
+i
+1
+s
+Buff-Self
+s
+Buff-Self-Spell-Handler
+i
+26
+i
+3
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+istrue[getvar[SelfEights]]
+TABLE
+2
+K
+V
+n
+n
+11
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[CreatureEnchSelf, 4530]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[FocusSelf, 4305]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[WillpowerSelf, 4329]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[LifeMagicSelf, 4582]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[ItemEnchSelf, 4564]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[ManaCSelf, 4602]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[EnduranceSelf, 4299]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[HermLinkSelf, 2117]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[LeaderSelf, 4578]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[LoyaltySelf, 4548]
+i
+1
+s
+Buff-Self
+s
+Buff-Self-Spell-Handler
 i
 3
 i
@@ -10539,7 +13357,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[6114, getvar[target]]
+actiontrycastbyidontarget[getvar[Summoning], getvar[target]]
 i
 7
 TABLE
@@ -10552,7 +13370,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[6114, getvar[target]]
+actiontrycastbyidontarget[getvar[Summoning], getvar[target]]
 i
 7
 TABLE
@@ -10565,7 +13383,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[6114, getvar[target]]
+actiontrycastbyidontarget[getvar[Summoning], getvar[target]]
 s
 Buff-Skills
 i
@@ -10582,7 +13400,7 @@ n
 i
 4
 s
-You cast Summoning Mastery Other VII
+You cast Summoning
 TABLE
 2
 K
@@ -10645,7 +13463,7 @@ n
 s
 e
 s
-getisspellknown[3526]==true
+getisspellknown[getvar[NuhEnlight]]==true
 TABLE
 2
 K
@@ -10665,7 +13483,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[3526, getvar[target]]
+actiontrycastbyidontarget[getvar[NuhEnlight], getvar[target]]
 i
 7
 TABLE
@@ -10678,7 +13496,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[3526, getvar[target]]
+actiontrycastbyidontarget[getvar[NuhEnlight], getvar[target]]
 i
 7
 TABLE
@@ -10691,7 +13509,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[3526, getvar[target]]
+actiontrycastbyidontarget[getvar[NuhEnlight], getvar[target]]
 s
 Buff-Skills
 i
@@ -10730,7 +13548,7 @@ n
 s
 e
 s
-getisspellknown[3512]==true
+getisspellknown[getvar[ArcEnlight]]==true
 TABLE
 2
 K
@@ -10750,7 +13568,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[3512, getvar[target]]
+actiontrycastbyidontarget[getvar[ArcEnlight], getvar[target]]
 i
 7
 TABLE
@@ -10763,7 +13581,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[3512, getvar[target]]
+actiontrycastbyidontarget[getvar[ArcEnlight], getvar[target]]
 i
 7
 TABLE
@@ -10776,7 +13594,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[3512, getvar[target]]
+actiontrycastbyidontarget[getvar[ArcEnlight], getvar[target]]
 s
 Buff-Skills
 i
@@ -10867,7 +13685,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2270, getvar[target]]
+actiontrycastbyidontarget[getvar[Lockpick], getvar[target]]
 i
 7
 TABLE
@@ -10880,7 +13698,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2270, getvar[target]]
+actiontrycastbyidontarget[getvar[Lockpick], getvar[target]]
 i
 7
 TABLE
@@ -10893,11 +13711,11 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2270, getvar[target]]
+actiontrycastbyidontarget[getvar[Lockpick], getvar[target]]
 s
 Buff-Skills
 i
-2
+3
 i
 3
 TABLE
@@ -10906,11 +13724,15 @@ K
 V
 n
 n
-1
+2
 i
 4
 s
 You cast Oswald's Boon
+i
+4
+s
+You cast Lock
 TABLE
 2
 K
@@ -10971,7 +13793,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2244, getvar[target]]
+actiontrycastbyidontarget[getvar[MeleeD], getvar[target]]
 i
 7
 TABLE
@@ -10984,7 +13806,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2244, getvar[target]]
+actiontrycastbyidontarget[getvar[MeleeD], getvar[target]]
 i
 7
 TABLE
@@ -10997,15 +13819,28 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2244, getvar[target]]
+actiontrycastbyidontarget[getvar[MeleeD], getvar[target]]
 s
 Buff-Skills
 i
-4
+3
 i
 3
+TABLE
+2
+K
+V
+n
+n
+2
+i
+4
 s
 You cast Web of Defense
+i
+4
+s
+You cast Invuln
 TABLE
 2
 K
@@ -11066,7 +13901,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2280, getvar[target]]
+actiontrycastbyidontarget[getvar[MagicD], getvar[target]]
 i
 7
 TABLE
@@ -11079,7 +13914,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2280, getvar[target]]
+actiontrycastbyidontarget[getvar[MagicD], getvar[target]]
 i
 7
 TABLE
@@ -11092,15 +13927,28 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2280, getvar[target]]
+actiontrycastbyidontarget[getvar[MagicD], getvar[target]]
 s
 Buff-Skills
 i
-4
+3
 i
 3
+TABLE
+2
+K
+V
+n
+n
+2
+i
+4
 s
 You cast Web of Resistance
+i
+4
+s
+You cast Magic Resist
 TABLE
 2
 K
@@ -11161,7 +14009,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2242, getvar[target]]
+actiontrycastbyidontarget[getvar[MissileD], getvar[target]]
 i
 7
 TABLE
@@ -11174,7 +14022,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2242, getvar[target]]
+actiontrycastbyidontarget[getvar[MissileD], getvar[target]]
 i
 7
 TABLE
@@ -11187,15 +14035,28 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2242, getvar[target]]
+actiontrycastbyidontarget[getvar[MissileD], getvar[target]]
 s
 Buff-Skills
 i
-4
+3
 i
 3
+TABLE
+2
+K
+V
+n
+n
+2
+i
+4
 s
 You cast Web of Deflection
+i
+4
+s
+You cast Impreg
 TABLE
 2
 K
@@ -11256,7 +14117,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2300, getvar[target]]
+actiontrycastbyidontarget[getvar[Sprint], getvar[target]]
 i
 7
 TABLE
@@ -11269,7 +14130,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2300, getvar[target]]
+actiontrycastbyidontarget[getvar[Sprint], getvar[target]]
 i
 7
 TABLE
@@ -11282,15 +14143,28 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2300, getvar[target]]
+actiontrycastbyidontarget[getvar[Sprint], getvar[target]]
 s
 Buff-Skills
 i
-4
+3
 i
 3
+TABLE
+2
+K
+V
+n
+n
+2
+i
+4
 s
 You cast Saladur's Boon
+i
+4
+s
+You cast Sprint
 TABLE
 2
 K
@@ -11351,7 +14225,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2256, getvar[target]]
+actiontrycastbyidontarget[getvar[Jump], getvar[target]]
 i
 7
 TABLE
@@ -11364,7 +14238,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2256, getvar[target]]
+actiontrycastbyidontarget[getvar[Jump], getvar[target]]
 i
 7
 TABLE
@@ -11377,15 +14251,28 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2256, getvar[target]]
+actiontrycastbyidontarget[getvar[Jump], getvar[target]]
 s
 Buff-Skills
 i
-4
+3
 i
 3
+TABLE
+2
+K
+V
+n
+n
+2
+i
+4
 s
 You cast Jahannan's Boon
+i
+4
+s
+You cast Jump
 TABLE
 2
 K
@@ -11446,7 +14333,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2266, getvar[target]]
+actiontrycastbyidontarget[getvar[LifeMagic], getvar[target]]
 i
 7
 TABLE
@@ -11459,7 +14346,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2266, getvar[target]]
+actiontrycastbyidontarget[getvar[LifeMagic], getvar[target]]
 i
 7
 TABLE
@@ -11472,15 +14359,28 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2266, getvar[target]]
+actiontrycastbyidontarget[getvar[LifeMagic], getvar[target]]
 s
 Buff-Skills
 i
-4
+3
 i
 3
+TABLE
+2
+K
+V
+n
+n
+2
+i
+4
 s
 You cast Harlune's Boon
+i
+4
+s
+You cast Life
 TABLE
 2
 K
@@ -11541,7 +14441,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2214, getvar[target]]
+actiontrycastbyidontarget[getvar[CreatureEnch], getvar[target]]
 i
 7
 TABLE
@@ -11554,7 +14454,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2214, getvar[target]]
+actiontrycastbyidontarget[getvar[CreatureEnch], getvar[target]]
 i
 7
 TABLE
@@ -11567,15 +14467,28 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2214, getvar[target]]
+actiontrycastbyidontarget[getvar[CreatureEnch], getvar[target]]
 s
 Buff-Skills
 i
-4
+3
 i
 3
+TABLE
+2
+K
+V
+n
+n
+2
+i
+4
 s
 You cast Adja's Boon
+i
+4
+s
+You cast Creature
 TABLE
 2
 K
@@ -11636,7 +14549,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2248, getvar[target]]
+actiontrycastbyidontarget[getvar[ItemEnch], getvar[target]]
 i
 7
 TABLE
@@ -11649,7 +14562,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2248, getvar[target]]
+actiontrycastbyidontarget[getvar[ItemEnch], getvar[target]]
 i
 7
 TABLE
@@ -11662,15 +14575,28 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2248, getvar[target]]
+actiontrycastbyidontarget[getvar[ItemEnch], getvar[target]]
 s
 Buff-Skills
 i
-4
+3
 i
 3
+TABLE
+2
+K
+V
+n
+n
+2
+i
+4
 s
 You cast Celcynd's Boon
+i
+4
+s
+You cast Item Ench
 TABLE
 2
 K
@@ -11731,7 +14657,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2286, getvar[target]]
+actiontrycastbyidontarget[getvar[ManaCon], getvar[target]]
 i
 7
 TABLE
@@ -11744,7 +14670,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2286, getvar[target]]
+actiontrycastbyidontarget[getvar[ManaCon], getvar[target]]
 i
 7
 TABLE
@@ -11757,15 +14683,28 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2286, getvar[target]]
+actiontrycastbyidontarget[getvar[ManaCon], getvar[target]]
 s
 Buff-Skills
 i
-4
+3
 i
 3
+TABLE
+2
+K
+V
+n
+n
+2
+i
+4
 s
 You cast Nuhmudira's Boon
+i
+4
+s
+You cast Mana Con
 TABLE
 2
 K
@@ -11826,7 +14765,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2194, getvar[target]]
+actiontrycastbyidontarget[getvar[ArcaneLore], getvar[target]]
 i
 7
 TABLE
@@ -11839,7 +14778,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2194, getvar[target]]
+actiontrycastbyidontarget[getvar[ArcaneLore], getvar[target]]
 i
 7
 TABLE
@@ -11852,7 +14791,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2194, getvar[target]]
+actiontrycastbyidontarget[getvar[ArcaneLore], getvar[target]]
 s
 Buff-Skills
 i
@@ -11867,10 +14806,6 @@ n
 n
 2
 i
-4
-s
-You cast Aliester's Boon
-i
 26
 TABLE
 2
@@ -11883,6 +14818,23 @@ s
 e
 s
 getvar[trigger]==buffs
+i
+3
+TABLE
+2
+K
+V
+n
+n
+2
+i
+4
+s
+You cast Aliester's Boon
+i
+4
+s
+You cast Arcane
 TABLE
 2
 K
@@ -11906,11 +14858,24 @@ setvar[buffs, 3]
 s
 Buff-Skills
 i
-4
+3
 i
 3
+TABLE
+2
+K
+V
+n
+n
+2
+i
+4
 s
 You cast Aliester's Boon
+i
+4
+s
+You cast Arcane
 TABLE
 2
 K
@@ -12006,7 +14971,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2232, getvar[target]]
+actiontrycastbyidontarget[getvar[Loyalty], getvar[target]]
 i
 7
 TABLE
@@ -12019,7 +14984,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2232, getvar[target]]
+actiontrycastbyidontarget[getvar[Loyalty], getvar[target]]
 i
 7
 TABLE
@@ -12032,15 +14997,28 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2232, getvar[target]]
+actiontrycastbyidontarget[getvar[Loyalty], getvar[target]]
 s
 Buff-Skills
 i
-4
+3
 i
 3
+TABLE
+2
+K
+V
+n
+n
+2
+i
+4
 s
 You cast Odif's Boon
+i
+4
+s
+You cast Fealty
 TABLE
 2
 K
@@ -12114,7 +15092,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2262, getvar[target]]
+actiontrycastbyidontarget[getvar[Leadership], getvar[target]]
 i
 7
 TABLE
@@ -12127,7 +15105,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2262, getvar[target]]
+actiontrycastbyidontarget[getvar[Leadership], getvar[target]]
 i
 7
 TABLE
@@ -12140,15 +15118,28 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2262, getvar[target]]
+actiontrycastbyidontarget[getvar[Leadership], getvar[target]]
 s
 Buff-Skills
 i
-4
+3
 i
 3
+TABLE
+2
+K
+V
+n
+n
+2
+i
+4
 s
 You cast Ar-Pei's Boon
+i
+4
+s
+You cast Leader
 TABLE
 2
 K
@@ -12441,7 +15432,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2322, getvar[target]]
+actiontrycastbyidontarget[getvar[War], getvar[target]]
 i
 7
 TABLE
@@ -12454,7 +15445,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2322, getvar[target]]
+actiontrycastbyidontarget[getvar[War], getvar[target]]
 i
 7
 TABLE
@@ -12467,15 +15458,28 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2322, getvar[target]]
+actiontrycastbyidontarget[getvar[War], getvar[target]]
 s
 Buff-Skills2
 i
-4
+3
 i
 3
+TABLE
+2
+K
+V
+n
+n
+2
+i
+4
 s
 You cast Hieromancer's Boon
+i
+4
+s
+You cast War
 TABLE
 2
 K
@@ -12571,7 +15575,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2312, getvar[target]]
+actiontrycastbyidontarget[getvar[MissileW], getvar[target]]
 i
 7
 TABLE
@@ -12584,7 +15588,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2312, getvar[target]]
+actiontrycastbyidontarget[getvar[MissileW], getvar[target]]
 i
 7
 TABLE
@@ -12597,7 +15601,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2312, getvar[target]]
+actiontrycastbyidontarget[getvar[MissileW], getvar[target]]
 s
 Buff-Skills2
 i
@@ -12605,7 +15609,7 @@ i
 i
 3
 s
-You cast Missile Weapon Mastery Other VII
+You cast Missile Weapon Mastery
 TABLE
 2
 K
@@ -12675,7 +15679,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2236, getvar[target]]
+actiontrycastbyidontarget[getvar[Fletching], getvar[target]]
 i
 7
 TABLE
@@ -12688,7 +15692,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2236, getvar[target]]
+actiontrycastbyidontarget[getvar[Fletching], getvar[target]]
 i
 7
 TABLE
@@ -12701,7 +15705,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2236, getvar[target]]
+actiontrycastbyidontarget[getvar[Fletching], getvar[target]]
 s
 Buff-Skills2
 i
@@ -12716,9 +15720,22 @@ n
 n
 2
 i
+3
+TABLE
+2
+K
+V
+n
+n
+2
+i
 4
 s
 You cast Lilitha's Boon
+i
+4
+s
+You cast Fletching
 i
 26
 TABLE
@@ -12866,7 +15883,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2240, getvar[target]]
+actiontrycastbyidontarget[getvar[Healing], getvar[target]]
 i
 7
 TABLE
@@ -12879,7 +15896,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2240, getvar[target]]
+actiontrycastbyidontarget[getvar[Healing], getvar[target]]
 i
 7
 TABLE
@@ -12892,15 +15909,28 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2240, getvar[target]]
+actiontrycastbyidontarget[getvar[Healing], getvar[target]]
 s
 Buff-Skills2
 i
-4
+3
 i
 3
+TABLE
+2
+K
+V
+n
+n
+2
+i
+4
 s
 You cast Avalenne's Boon
+i
+4
+s
+You cast Healing
 TABLE
 2
 K
@@ -13057,7 +16087,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2222, getvar[target]]
+actiontrycastbyidontarget[getvar[Finesse], getvar[target]]
 i
 7
 TABLE
@@ -13070,7 +16100,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2222, getvar[target]]
+actiontrycastbyidontarget[getvar[Finesse], getvar[target]]
 i
 7
 TABLE
@@ -13083,7 +16113,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2222, getvar[target]]
+actiontrycastbyidontarget[getvar[Finesse], getvar[target]]
 s
 Buff-Skills2
 i
@@ -13091,7 +16121,7 @@ i
 i
 3
 s
-You cast Finesse Weapon Mastery Other VII
+You cast Finesse Weapon Mastery
 TABLE
 2
 K
@@ -13174,7 +16204,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2202, getvar[target]]
+actiontrycastbyidontarget[getvar[Light], getvar[target]]
 i
 7
 TABLE
@@ -13187,7 +16217,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2202, getvar[target]]
+actiontrycastbyidontarget[getvar[Light], getvar[target]]
 i
 7
 TABLE
@@ -13200,7 +16230,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2202, getvar[target]]
+actiontrycastbyidontarget[getvar[Light], getvar[target]]
 s
 Buff-Skills2
 i
@@ -13208,7 +16238,7 @@ i
 i
 3
 s
-You cast Light Weapon Mastery Other VII
+You cast Light Weapon Mastery
 TABLE
 2
 K
@@ -13291,7 +16321,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2308, getvar[target]]
+actiontrycastbyidontarget[getvar[Heavy], getvar[target]]
 i
 7
 TABLE
@@ -13304,7 +16334,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2308, getvar[target]]
+actiontrycastbyidontarget[getvar[Heavy], getvar[target]]
 i
 7
 TABLE
@@ -13317,7 +16347,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2308, getvar[target]]
+actiontrycastbyidontarget[getvar[Heavy], getvar[target]]
 s
 Buff-Skills2
 i
@@ -13325,7 +16355,7 @@ i
 i
 3
 s
-You cast Heavy Weapon Mastery Other VII
+You cast Heavy Weapon Mastery
 TABLE
 2
 K
@@ -13421,7 +16451,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[5849, getvar[target]]
+actiontrycastbyidontarget[getvar[Shield], getvar[target]]
 i
 7
 TABLE
@@ -13434,7 +16464,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[5849, getvar[target]]
+actiontrycastbyidontarget[getvar[Shield], getvar[target]]
 i
 7
 TABLE
@@ -13447,7 +16477,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[5849, getvar[target]]
+actiontrycastbyidontarget[getvar[Shield], getvar[target]]
 s
 Buff-Skills2
 i
@@ -13455,7 +16485,7 @@ i
 i
 3
 s
-You cast Shield Mastery Other VII
+You cast Shield Mastery
 TABLE
 2
 K
@@ -13564,7 +16594,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2236, getvar[target]]
+actiontrycastbyidontarget[getvar[Fletching], getvar[target]]
 i
 7
 TABLE
@@ -13577,7 +16607,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2236, getvar[target]]
+actiontrycastbyidontarget[getvar[Fletching], getvar[target]]
 i
 7
 TABLE
@@ -13590,15 +16620,28 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2236, getvar[target]]
+actiontrycastbyidontarget[getvar[Fletching], getvar[target]]
 s
 Buff-Skills2
 i
-4
+3
 i
 3
+TABLE
+2
+K
+V
+n
+n
+2
+i
+4
 s
 You cast Lilitha's Boon
+i
+4
+s
+You cast Fletch
 TABLE
 2
 K
@@ -13659,7 +16702,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2210, getvar[target]]
+actiontrycastbyidontarget[getvar[Cooking], getvar[target]]
 i
 7
 TABLE
@@ -13672,7 +16715,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2210, getvar[target]]
+actiontrycastbyidontarget[getvar[Cooking], getvar[target]]
 i
 7
 TABLE
@@ -13685,15 +16728,28 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2210, getvar[target]]
+actiontrycastbyidontarget[getvar[Cooking], getvar[target]]
 s
 Buff-Skills2
 i
-4
+3
 i
 3
+TABLE
+2
+K
+V
+n
+n
+2
+i
+4
 s
 You cast Morimoto's Boon
+i
+4
+s
+You cast Cook
 TABLE
 2
 K
@@ -13763,7 +16819,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2190, getvar[target]]
+actiontrycastbyidontarget[getvar[Alchemy], getvar[target]]
 i
 7
 TABLE
@@ -13776,7 +16832,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2190, getvar[target]]
+actiontrycastbyidontarget[getvar[Alchemy], getvar[target]]
 i
 7
 TABLE
@@ -13789,15 +16845,28 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2190, getvar[target]]
+actiontrycastbyidontarget[getvar[Alchemy], getvar[target]]
 s
 Buff-Skills2
 i
-4
+3
 i
 3
+TABLE
+2
+K
+V
+n
+n
+2
+i
+4
 s
 You cast Silencia's Boon
+i
+4
+s
+You cast Alch
 TABLE
 2
 K
@@ -13858,7 +16927,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2270, getvar[target]]
+actiontrycastbyidontarget[getvar[Lockpick], getvar[target]]
 i
 7
 TABLE
@@ -13871,7 +16940,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2270, getvar[target]]
+actiontrycastbyidontarget[getvar[Lockpick], getvar[target]]
 i
 7
 TABLE
@@ -13884,15 +16953,28 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2270, getvar[target]]
+actiontrycastbyidontarget[getvar[Lockpick], getvar[target]]
 s
 Buff-Skills2
 i
-4
+3
 i
 3
+TABLE
+2
+K
+V
+n
+n
+2
+i
+4
 s
 You cast Oswald's Boon
+i
+4
+s
+You cast Lock
 TABLE
 2
 K
@@ -13975,7 +17057,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2250, getvar[target]]
+actiontrycastbyidontarget[getvar[ItemTink], getvar[target]]
 i
 7
 TABLE
@@ -13988,7 +17070,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2250, getvar[target]]
+actiontrycastbyidontarget[getvar[ItemTink], getvar[target]]
 i
 7
 TABLE
@@ -14001,15 +17083,28 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2250, getvar[target]]
+actiontrycastbyidontarget[getvar[ItemTink], getvar[target]]
 s
 Buff-Skills2
 i
-4
+3
 i
 3
+TABLE
+2
+K
+V
+n
+n
+2
+i
+4
 s
 You cast Yoshi's Boon
+i
+4
+s
+You cast Item Tink
 TABLE
 2
 K
@@ -14070,7 +17165,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2276, getvar[target]]
+actiontrycastbyidontarget[getvar[MagicTink], getvar[target]]
 i
 7
 TABLE
@@ -14083,7 +17178,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2276, getvar[target]]
+actiontrycastbyidontarget[getvar[MagicTink], getvar[target]]
 i
 7
 TABLE
@@ -14096,15 +17191,28 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2276, getvar[target]]
+actiontrycastbyidontarget[getvar[MagicTink], getvar[target]]
 s
 Buff-Skills2
 i
-4
+3
 i
 3
+TABLE
+2
+K
+V
+n
+n
+2
+i
+4
 s
 You cast Celdiseth's Boon
+i
+4
+s
+You cast Magic Item
 TABLE
 2
 K
@@ -14165,7 +17273,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2324, getvar[target]]
+actiontrycastbyidontarget[getvar[WeapTink], getvar[target]]
 i
 7
 TABLE
@@ -14178,7 +17286,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2324, getvar[target]]
+actiontrycastbyidontarget[getvar[WeapTink], getvar[target]]
 i
 7
 TABLE
@@ -14191,15 +17299,28 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2324, getvar[target]]
+actiontrycastbyidontarget[getvar[WeapTink], getvar[target]]
 s
 Buff-Skills2
 i
-4
+3
 i
 3
+TABLE
+2
+K
+V
+n
+n
+2
+i
+4
 s
 You cast Koga's Boon
+i
+4
+s
+You cast Weapon Tink
 TABLE
 2
 K
@@ -14260,7 +17381,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2196, getvar[target]]
+actiontrycastbyidontarget[getvar[ArmorTink], getvar[target]]
 i
 7
 TABLE
@@ -14273,7 +17394,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2196, getvar[target]]
+actiontrycastbyidontarget[getvar[ArmorTink], getvar[target]]
 i
 7
 TABLE
@@ -14286,15 +17407,28 @@ n
 s
 e
 s
-actiontrycastbyidontarget[2196, getvar[target]]
+actiontrycastbyidontarget[getvar[ArmorTink], getvar[target]]
 s
 Buff-Skills2
 i
-4
+3
 i
 3
+TABLE
+2
+K
+V
+n
+n
+2
+i
+4
 s
 You cast Jibril's Boon
+i
+4
+s
+You cast Armor Tink
 TABLE
 2
 K
@@ -14377,7 +17511,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[5409, getvar[target]]
+actiontrycastbyidontarget[getvar[Void], getvar[target]]
 i
 7
 TABLE
@@ -14390,7 +17524,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[5409, getvar[target]]
+actiontrycastbyidontarget[getvar[Void], getvar[target]]
 i
 7
 TABLE
@@ -14403,7 +17537,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[5409, getvar[target]]
+actiontrycastbyidontarget[getvar[Void], getvar[target]]
 s
 Buff-Skills2
 i
@@ -14420,7 +17554,7 @@ n
 i
 4
 s
-You cast Void Magic Mastery Other VII
+You cast Void Magic Mastery
 TABLE
 2
 K
@@ -14516,7 +17650,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[5097, getvar[target]]
+actiontrycastbyidontarget[getvar[TwoHand], getvar[target]]
 i
 7
 TABLE
@@ -14529,7 +17663,7 @@ n
 s
 e
 s
-actiontrycastbyidontarget[5097, getvar[target]]
+actiontrycastbyidontarget[getvar[TwoHand], getvar[target]]
 i
 7
 TABLE
@@ -14542,11 +17676,11 @@ n
 s
 e
 s
-actiontrycastbyidontarget[5097, getvar[target]]
+actiontrycastbyidontarget[getvar[TwoHand], getvar[target]]
 s
 Buff-Skills2
 i
-2
+3
 i
 3
 TABLE
@@ -14555,11 +17689,15 @@ K
 V
 n
 n
-1
+2
 i
 4
 s
 You cast Boon of T'ing
+i
+4
+s
+You cast Two
 TABLE
 2
 K
@@ -14968,7 +18106,7 @@ i
 i
 1
 i
-5
+4
 s
 Cast-Brilliance
 s
@@ -15199,7 +18337,7 @@ n
 i
 6
 i
-3
+2
 i
 3
 TABLE
@@ -15371,7 +18509,7 @@ n
 i
 6
 i
-3
+2
 i
 3
 TABLE
@@ -15488,7 +18626,7 @@ n
 i
 6
 i
-6
+4
 i
 26
 TABLE
@@ -15639,6 +18777,156 @@ n
 s
 e
 s
+istrue[getvar[RegainVitalsSixes]]
+TABLE
+2
+K
+V
+n
+n
+2
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[StaminaToMana, 1681]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Revitalize, 1182]
+s
+Cast-Vitals
+i
+26
+i
+3
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+istrue[getvar[RegainVitalsSevens]]
+TABLE
+2
+K
+V
+n
+n
+2
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[StaminaToMana, 2345]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Revitalize, 2083]
+s
+Cast-Vitals
+i
+26
+i
+3
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+istrue[getvar[RegainVitalsEights]]
+TABLE
+2
+K
+V
+n
+n
+2
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[StaminaToMana, 2345]
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[Revitalize, 4321]
+s
+Cast-Vitals
+i
+26
+i
+3
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
 getcharvital_current[2]<=getvar[MinStamina]
 TABLE
 2
@@ -15659,7 +18947,7 @@ n
 s
 e
 s
-actiontrycastbyid[2083]
+actiontrycastbyid[getvar[Revitalize]]
 i
 7
 TABLE
@@ -15672,7 +18960,7 @@ n
 s
 e
 s
-actiontrycastbyid[2083]
+actiontrycastbyid[getvar[Revitalize]]
 i
 7
 TABLE
@@ -15685,7 +18973,7 @@ n
 s
 e
 s
-actiontrycastbyid[2083]
+actiontrycastbyid[getvar[Revitalize]]
 i
 6
 i
@@ -15726,7 +19014,7 @@ n
 s
 e
 s
-actiontrycastbyid[2345]
+actiontrycastbyid[getvar[StaminaToMana]]
 i
 7
 TABLE
@@ -15739,7 +19027,7 @@ n
 s
 e
 s
-actiontrycastbyid[2345]
+actiontrycastbyid[getvar[StaminaToMana]]
 i
 7
 TABLE
@@ -15752,7 +19040,7 @@ n
 s
 e
 s
-actiontrycastbyid[2345]
+actiontrycastbyid[getvar[StaminaToMana]]
 i
 6
 i
@@ -18131,7 +21419,7 @@ Prismatic Taper
 s
 c
 i
-0
+3
 TABLE
 2
 K
@@ -18168,9 +21456,129 @@ setvar[destruct, 1]
 s
 Check-Spell-Components
 i
-11
+2
 i
 3
+TABLE
+2
+K
+V
+n
+n
+2
+i
+11
+TABLE
+2
+k
+v
+n
+n
+2
+s
+n
+s
+Pyreal Scarab
+s
+c
+i
+0
+i
+3
+TABLE
+2
+K
+V
+n
+n
+3
+i
+26
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+istrue[getvar[OtherSixes]]
+i
+26
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+istrue[getvar[BaneSixes]]
+i
+26
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+istrue[getvar[ItemSixes]]
+TABLE
+2
+K
+V
+n
+n
+2
+i
+8
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+\/t +getvar[name]+\, Pyreal Scarab shortage detected\.\.\.Self\-Destruct authorization accepted\. Smoke \'em if you got \'em boys\.
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[destruct, 1]
+s
+Check-Spell-Components
+i
+2
+i
+3
+TABLE
+2
+K
+V
+n
+n
+2
+i
+11
 TABLE
 2
 k
@@ -18186,6 +21594,54 @@ s
 c
 i
 0
+i
+3
+TABLE
+2
+K
+V
+n
+n
+3
+i
+26
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+istrue[getvar[OtherSevens]]
+i
+26
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+istrue[getvar[BaneSevens]]
+i
+26
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+istrue[getvar[ItemSevens]]
 TABLE
 2
 K
@@ -18257,20 +21713,7 @@ K
 V
 n
 n
-3
-i
-26
-TABLE
 2
-k
-v
-n
-n
-1
-s
-e
-s
-getvar[SelfEights]==true
 i
 26
 TABLE
@@ -18856,6 +22299,62 @@ s
 e
 s
 actiontryequipanywand[]
+s
+Default
+i
+26
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+getisspellknown[2312]==true
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[MWID, 2312]
+s
+Default
+i
+26
+i
+7
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+getisspellknown[2206]==true
+TABLE
+2
+k
+v
+n
+n
+1
+s
+e
+s
+setvar[MWID, 2206]
 s
 Default
 i

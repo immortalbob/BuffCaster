@@ -20,31 +20,32 @@ Listed from top to bottom of *** Edit Here *** state:
 8. Max Distance. the maximum distance a player can be from you and still receive buffs. (in meters)
 9. Min Stamina, and Min Mana. The minimum of each vital before the bot attempts to regain said vital.
 10. PortalBot, Set to always to enable the portal bot, never to disable it.
-11. Primary/Secondary tie names.
-12. Primary and secondary headings for summoning portals. 0 = North, 90 = East, 180 = South, 270 = West and everything in between
-13. Brilliance Bot. Set to never on the left side to disable casting brilliance.
-14. Refill Focusing Stone. Set to never if you don't wish to refill the focusing stone upon each brill.
-15. Refill Charge. Name of the Mana Charge you wish to use to refill the Focusing Stone.
-16. Master Mage Gem usage. Set to always or never to enable/disable.
-17. Master Mage Gem Name. Set to the name of the gem you wish to open. (Stock setting is Celdiseth's Portal Gem)
-18. Town Network gem usage, set to never or always to enable/disable it.
-19. PreBuff, set to always to enable prebuffing (foc/self/creature of 1 lesser level before main self buff routine)
-20. Self Sixes. Buffs self with 6's if set to always.
-21. Self Sevens. Buffs self with 7's if set to always.
-22. Self Eights. Buffs self with 8's if set to always.
-23. Other Sixes. Buffs others with 6's if set to always.
-24. Other Sevens. Buffs others with 7's if set to always.
-25. Bane Sixes. Uses sixes when baning a shield if set to always.
-26. Bane Sevens. Uses sevens when baning a shield if set to always.
-27. Bane Eights. Uses eights when baning a shield if set to always.
-28. Item Sixes. Uses sixes when buffing weapon auras if set to always.
-29. Item Sevens. Uses sevens when buffing weapon auras if set to always.
-30. Item Eights. Uses eights when buffing weapon auras if set to always.
-31. Regain Vitals Sixes. Uses level six spells to regain stamina and mana when set to always.
-32. Regain Vitals Sevens. Uses level seven spells to regain stamina and mana when set to always.
-33. Regain Vitals Eights. Uses level eight spells to regain stamina and mana when set to always.
-34. Allow Reset. Allows the use of the reset command. This is disabled by default because it is abusable.
-35. Set State Main Loop, don't touch this line.
+11. Summon Spell Level, set to 1, 2, or 3 to choose which level of summon spell you use.
+12. Primary/Secondary tie names.
+13. Primary and secondary headings for summoning portals. 0 = North, 90 = East, 180 = South, 270 = West and everything in between
+14. Brilliance Bot. Set to never on the left side to disable casting brilliance.
+15. Refill Focusing Stone. Set to never if you don't wish to refill the focusing stone upon each brill.
+16. Refill Charge. Name of the Mana Charge you wish to use to refill the Focusing Stone.
+17. Master Mage Gem usage. Set to always or never to enable/disable.
+18. Master Mage Gem Name. Set to the name of the gem you wish to open. (Stock setting is Celdiseth's Portal Gem)
+19. Town Network gem usage, set to never or always to enable/disable it.
+20. PreBuff, set to always to enable prebuffing (foc/self/creature of 1 lesser level before main self buff routine)
+21. Self Sixes. Buffs self with 6's if set to always.
+22. Self Sevens. Buffs self with 7's if set to always.
+23. Self Eights. Buffs self with 8's if set to always.
+24. Other Sixes. Buffs others with 6's if set to always.
+25. Other Sevens. Buffs others with 7's if set to always.
+26. Bane Sixes. Uses sixes when baning a shield if set to always.
+27. Bane Sevens. Uses sevens when baning a shield if set to always.
+28. Bane Eights. Uses eights when baning a shield if set to always.
+29. Item Sixes. Uses sixes when buffing weapon auras if set to always.
+30. Item Sevens. Uses sevens when buffing weapon auras if set to always.
+31. Item Eights. Uses eights when buffing weapon auras if set to always.
+32. Regain Vitals Sixes. Uses level six spells to regain stamina and mana when set to always.
+33. Regain Vitals Sevens. Uses level seven spells to regain stamina and mana when set to always.
+34. Regain Vitals Eights. Uses level eight spells to regain stamina and mana when set to always.
+35. Allow Reset. Allows the use of the reset command. This is disabled by default because it is abusable.
+36. Set State Main Loop, don't touch this line.
 
 
 

@@ -1,3 +1,7 @@
+Version 1.3.1
+-delays fixed for summoning portals, it should switch headings again before summoning.
+-added ability to set your summon spell level to 1, 2, or 3 (default 1)
+
 Version 1.3
 -Buffing system overhaul part 1, "variable-ized" the buff ID's to allow for expanding to lesser level buff sets.
 -Can now cast 6's, 7's, and 8's.

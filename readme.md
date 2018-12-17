@@ -45,7 +45,8 @@ Listed from top to bottom of *** Edit Here *** state:
 33. Regain Vitals Sevens. Uses level seven spells to regain stamina and mana when set to always.
 34. Regain Vitals Eights. Uses level eight spells to regain stamina and mana when set to always.
 35. Allow Reset. Allows the use of the reset command. This is disabled by default because it is abusable.
-36. Set State Main Loop, don't touch this line.
+36. Configurable goodbye message, you must escape all numbers and special characters with a \
+37. Set State Main Loop, don't touch this line.
 
 
 

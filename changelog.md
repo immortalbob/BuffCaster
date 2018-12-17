@@ -1,3 +1,8 @@
+Version 1.3.2
+-Now supports ALL versions of Light Weapons Mastery Other VI/VII and Missile Weapons Mastery Other VI/VII (16)
+-If brilliance is NOT cast within 5 seconds, bot will ask for the Refill Charge necessary to refill the mana stone, and return to what it was doing prior.
+-There is now configurable goodbye messages found at the bottom of the *** Edit Here *** state
+
 Version 1.3.1
 -delays fixed for summoning portals, it should switch headings again before summoning.
 -added ability to set your summon spell level to 1, 2, or 3 (default 1)

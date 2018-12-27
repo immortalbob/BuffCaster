@@ -1,3 +1,8 @@
+Version 1.4.0
+-Added most alternate commands that match up with Castaway
+-Can now queue up to 9, with 1 buffing!
+-added a check in case recharging vitals fails to return on its own
+
 Version 1.3.2
 -Now supports ALL versions of Light Weapons Mastery Other VI/VII and Missile Weapons Mastery Other VI/VII (16)
 -If brilliance is NOT cast within 5 seconds, bot will ask for the Refill Charge necessary to refill the mana stone, and return to what it was doing prior.

@@ -61,4 +61,4 @@ Notes:
 4. only gives thanks for gifts from the main loop. (while awaiting a command)
 5. will cast brill, and/or summon portals in the middle of buffing someone else and then return to buffing to save time.
 6. queue's up to 1 player being buffed, and 5 in line.
-7. only supports buffing with level 6, 7, and 8 spells, will fail upon unknown spells.
+7. only supports buffing with level 6, 7, and 8 spells.

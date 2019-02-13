@@ -1,3 +1,9 @@
+1.5.0
+-Bugfix: Responds to the correct person now while summoning portals and @tells are received.
+unknown spell checking
+-Bugfix: No longer double casts fletching in the "trade" cycle.
+-Feature: Checks if spell is learned before casting, should skip unknown spells and move on.
+
 Version 1.4.0
 -Added most alternate commands that match up with Castaway
 -Can now queue up to 9, with 1 buffing!

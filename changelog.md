@@ -1,3 +1,7 @@
+1.6.0
+-Added in secondary combat skills (reck, sneak, dual, and dirty) to the main buff loop, must be enabled in edit here state.
+-Added in assessment skills (assess person, assess creature, and deception) to the main buff loop, must be enabled in edit here state.
+
 1.5.0
 -Bugfix: Responds to the correct person now while summoning portals and @tells are received.
 unknown spell checking

@@ -35,18 +35,20 @@ Listed from top to bottom of *** Edit Here *** state:
 23. Self Eights. Buffs self with 8's if set to always.
 24. Other Sixes. Buffs others with 6's if set to always.
 25. Other Sevens. Buffs others with 7's if set to always.
-26. Bane Sixes. Uses sixes when baning a shield if set to always.
-27. Bane Sevens. Uses sevens when baning a shield if set to always.
-28. Bane Eights. Uses eights when baning a shield if set to always.
-29. Item Sixes. Uses sixes when buffing weapon auras if set to always.
-30. Item Sevens. Uses sevens when buffing weapon auras if set to always.
-31. Item Eights. Uses eights when buffing weapon auras if set to always.
-32. Regain Vitals Sixes. Uses level six spells to regain stamina and mana when set to always.
-33. Regain Vitals Sevens. Uses level seven spells to regain stamina and mana when set to always.
-34. Regain Vitals Eights. Uses level eight spells to regain stamina and mana when set to always.
-35. Allow Reset. Allows the use of the reset command. This is disabled by default because it is abusable.
-36. Configurable goodbye message, you must escape all numbers and special characters with a \
-37. Set State Main Loop, don't touch this line.
+26. Secondary Combat Skills. Set to always to cast Dirty, Reck, Sneak, and Dual in main buff loop.
+27. Assessment Skills. Set to always to cast Assess Person, Assess Creature, and Deception in the main buff loop.
+28. Bane Sixes. Uses sixes when baning a shield if set to always.
+29. Bane Sevens. Uses sevens when baning a shield if set to always.
+30. Bane Eights. Uses eights when baning a shield if set to always.
+31. Item Sixes. Uses sixes when buffing weapon auras if set to always.
+32. Item Sevens. Uses sevens when buffing weapon auras if set to always.
+33. Item Eights. Uses eights when buffing weapon auras if set to always.
+34. Regain Vitals Sixes. Uses level six spells to regain stamina and mana when set to always.
+35. Regain Vitals Sevens. Uses level seven spells to regain stamina and mana when set to always.
+36. Regain Vitals Eights. Uses level eight spells to regain stamina and mana when set to always.
+37. Allow Reset. Allows the use of the reset command. This is disabled by default because it is abusable.
+38. Goodbye message, you must escape special characters and digits with a \, but never the brackets ([])
+39. Set State Main Loop, don't touch this line.
 
 
 
@@ -60,5 +62,5 @@ Notes:
 3. double casts a buff when receiving @tells with a string length of less than 11 characters, or regaining vitals.
 4. only gives thanks for gifts from the main loop. (while awaiting a command)
 5. will cast brill, and/or summon portals in the middle of buffing someone else and then return to buffing to save time.
-6. queue's up to 1 player being buffed, and 5 in line.
+6. queue's up to 1 player being buffed, and 9 in line.
 7. only supports buffing with level 6, 7, and 8 spells.

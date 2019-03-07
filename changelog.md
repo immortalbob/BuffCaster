@@ -1,3 +1,12 @@
+1.7.0
+-Bugfix: eliminated infinite loop bug introduced in last version.
+-Bugfix: Buff-Self state will no longer skip remaining spells if a lag spike occurs.
+-Bugfix: No longer double casts a buff after recharging mana/stamina
+-refactored all of the buff states into one, bringing the line count down 19.3%, from 446 lines to 360, and the size down by 12 kilobytes.
+-substantial amount of cleanup performed, and efficiency increased.
+-Feature: added a personalized Reset password option to the edit here section.
+-Feature: added new buff cycle "mule" for str end quick and run buffs.
+
 1.6.0
 -Added in secondary combat skills (reck, sneak, dual, and dirty) to the main buff loop, must be enabled in edit here state.
 -Added in assessment skills (assess person, assess creature, and deception) to the main buff loop, must be enabled in edit here state.

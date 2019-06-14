@@ -1,3 +1,17 @@
+1.8.1
+-Cleaned up Spell Settings in *** Edit Here *** state.
+
+1.8.0
+-Feature: Now loads (and autogenerates) the BuffCaster.usd Settings file, this way the settings changes buffcaster makes won't affect your default settings profile.
+-Feature: Will now set the vtank spell casting threshold according to the level of spell you are trying to cast. This should allow people that are just under the artificial limit vtank needs to cast by letting the meta adjust the SpellDiffExcessThreshold-Hunt vtank option.
+-Bugfix: Aura of Incantation of Hermetic Link Self added to self eights (instead of HL7).
+-Bugfix: Spam changed to forcibly include -b-, moved to *** Edit Here *** state, *** Edit Spam Here *** state removed.
+-Feature: Peace Mode When Idle option added.
+-Feature: A very simple "View" has been added with Pause/Resume, and Reset Buttons for quick access.
+-Feature: recharges vitals when asked for "heal" "stam" or "mana" (toggled on by default)
+-Bugfix: fixed minor bug in queue manager that might have messed up the 9th queue slot.
+-Feature: now verifies whether you have your revitalize self and stamina to mana spells learned.
+
 1.7.0
 -Bugfix: eliminated infinite loop bug introduced in last version.
 -Bugfix: Buff-Self state will no longer skip remaining spells if a lag spike occurs.

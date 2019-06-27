@@ -1,5 +1,3 @@
-I dunno, it's pretty good. Not a direct replacement for Castaway, but it does most things.
-
 Chat Commands:
 
 Code: Select all

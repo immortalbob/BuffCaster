@@ -1,3 +1,16 @@
+Version 1.9.0
+-the *** Edit Here *** state has been rearranged, and cleaned up
+-condensed spell settings in the *** Edit Here ***
+-Bugfix: Brill will now work right when using idle peace mode
+-Bugfix: Idle Peace Mode was interrupting buffing at times, no more
+-regaining vitals has been moved to its own new state "Vital Management"
+-MinHealth option added
+-bot will now make use of the health to mana, and heal self spells when appropriate
+-UseHealingKits option added (you need one in your consumables tab)
+-added headers to some states/substates
+-added more stats to the "stats" command
+-will now respond from some more states that it would ignore @tells from before
+
 1.8.1
 -Cleaned up Spell Settings in *** Edit Here *** state.
 

@@ -1,8 +1,7 @@
 Chat Commands:
 
-Code: Select all
 Buff Commands: war, void, missile, heavy, light, finesse, two, trade, tink, xp, buffs, strength, lore, prots, baneshield, brill, weapon, wand.
-Bot Commands: primary, secondary, mm, tn, stats, whereto, loc, cancel, reset
+Bot Commands: primary, secondary, mm, tn, stats, whereto, loc, cancel, reset, heal, stam, mana
 --reset command is disabled by default in the *** Edit Here *** state.
 
 Options:
@@ -41,26 +40,26 @@ Listed from top to bottom of *** Edit Here *** state:
 32. Spam Five, you must escape special characters and digits with a \, but never the brackets ([])
 33. Goodbye message, you must escape special characters and digits with a \, but never the brackets ([])
 
-25. CONSUMABLE SETTINGS
-34. Brilliance Bot. Set to never on the left side to disable casting brilliance.
-35. Refill Focusing Stone. Set to never if you don't wish to refill the focusing stone upon each brill.
-36. Refill Charge. Name of the Mana Charge you wish to use to refill the Focusing Stone.
-37. Master Mage Gem usage. Set to always or never to enable/disable.
-38. Master Mage Gem Name. Set to the name of the gem you wish to open. (Stock setting is Celdiseth's Portal Gem)
-39. Town Network gem usage, set to never or always to enable/disable it.
-40. Use Healing Kits to regain health, always/never
+34. CONSUMABLE SETTINGS
+35. Brilliance Bot. Set to never on the left side to disable casting brilliance.
+36. Refill Focusing Stone. Set to never if you don't wish to refill the focusing stone upon each brill.
+37. Refill Charge. Name of the Mana Charge you wish to use to refill the Focusing Stone.
+38. Master Mage Gem usage. Set to always or never to enable/disable.
+39. Master Mage Gem Name. Set to the name of the gem you wish to open. (Stock setting is Celdiseth's Portal Gem)
+40. Town Network gem usage, set to never or always to enable/disable it.
+41. Use Healing Kits to regain health, always/never
 
-41. SPELL SETTINGS
-42. PreBuff, set to always to enable prebuffing (foc/self/creature of 1 lesser level before main self buff routine)
-43. Recharge Vitals Other, set to always to allow the heal, stam, or mana commands
-44. Secondary Combat Skills. Set to always to cast Dirty, Reck, Sneak, and Dual in main buff loop.
-45. Assessment Skills. Set to always to cast Assess Person, Assess Creature, and Deception in the main buff loop.
-46. Buff Self Spell Level, set to 6, 7, or 8
-47. Buff Other Spell Level, set to 6, 7, or 8
-48. Bane Spell Level, set to 6, 7, or 8
-49. Item Spell Level, set to 6, 7, or 8
-50. Regain Vitals Self Spell Level, set to 6, 7, or 8
-51. Recharge Vitals Other Spell Level, set to 6, 7, or 8
+42. SPELL SETTINGS
+43. PreBuff, set to always to enable prebuffing (foc/self/creature of 1 lesser level before main self buff routine)
+44. Recharge Vitals Other, set to always to allow the heal, stam, or mana commands
+45. Secondary Combat Skills. Set to always to cast Dirty, Reck, Sneak, and Dual in main buff loop.
+46. Assessment Skills. Set to always to cast Assess Person, Assess Creature, and Deception in the main buff loop.
+47. Buff Self Spell Level, set to 6, 7, or 8
+48. Buff Other Spell Level, set to 6, 7, or 8
+49. Bane Spell Level, set to 6, 7, or 8
+50. Item Spell Level, set to 6, 7, or 8
+51. Regain Vitals Self Spell Level, set to 6, 7, or 8
+52. Recharge Vitals Other Spell Level, set to 6, 7, or 8
 
 Notes:
 1. does not respond to @tells while it is already in the chat handler, cycling the queue, or clearing variables after a completed buff cycle. All of these go by very fast, inevitably some @tells will be lost to them.
